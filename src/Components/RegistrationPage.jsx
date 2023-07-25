@@ -5,5 +5,4 @@ const RegistrationPage = () => {
     <div>LambiLambo</div>
   )
 }
-
 export default RegistrationPage
