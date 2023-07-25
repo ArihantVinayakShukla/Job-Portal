@@ -1,14 +1,12 @@
 // import logo from './logo.svg';
 // import './App.css';
-import RegistrationPage from "./Components/RegistrationPage";
+import RegistrationPage from "./Components/RegistrationPage/RegistrationPage.jsx";
  
 
 function App() {
   return (
-<>
+  <>
     <RegistrationPage/>
-    
-      <h1>juyhucguwujkdl</h1>
     </>
   );
 }

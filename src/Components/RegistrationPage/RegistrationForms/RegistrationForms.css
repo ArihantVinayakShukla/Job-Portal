@@ -1,0 +1,11 @@
+.form-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding-top: 50px;
+}
+
+.form-heading{
+    font-size: 40px;
+}
