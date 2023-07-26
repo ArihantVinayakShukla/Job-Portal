@@ -1,0 +1,50 @@
+.jobContainer{
+    width:70%;
+}
+.basicform{
+    width: 100%;
+
+}
+.jobHeading{
+    font-size:40px;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown-container {
+    width: 300px;
+  }
+.heading{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.value{
+    font-size: 20px;
+}
+.jobHeadingPara{
+    margin-top: 5px;
+    color: rgb(176, 174, 174);
+    margin-bottom: 30px;
+}
+.checkboxDiv{
+    width: 100%;
+    height: 80px;
+    border: 2px solid rgb(176, 174, 174);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius:10px;
+}
+.checkboxDiv input{
+    width:30px;
+    margin-right: 20px;
+}
+.continue-btn{
+    margin-bottom: 12px;
+}
+input[type="radio"]{
+    accent-color: green;
+}
