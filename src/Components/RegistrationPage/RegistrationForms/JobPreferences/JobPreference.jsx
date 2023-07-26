@@ -33,7 +33,6 @@ return(
         <div className="fieldGroup">
         <label  className="heading">
             Preferred Location
-
           </label>
       <div className="dropdown-container">
         <Select
@@ -43,10 +42,13 @@ return(
           onChange={handleSelect}
           isSearchable={true}
           isMulti
+          required
         />
       </div>
     </div>
+    <div className="fieldGroup">
         <h2 className="heading">What are you currently looking for?</h2>
+      <div className="twoDiv">
     <div className='checkboxDiv'>
         <input type="radio" name="profession" required/>
         <div>
@@ -54,13 +56,19 @@ return(
         </div>
         
       </div>
+      
+
       <div className='checkboxDiv'>
         <input type="radio" name="profession" required/>
         <div>
         <h2 className="value">Internship</h2>
         </div>
       </div>
+      </div>
+      </div>
+      <div className="fieldGroup">
       <h2 className="heading">Job type</h2>
+      <div className="twoDiv">
       <div className="checkboxDiv">
         <input type="radio" name="typejob" required></input>
         <div>
@@ -73,13 +81,15 @@ return(
             <h2 className="value">Part time</h2>
         </div>
       </div>
+      </div>
+      </div>
       <button type="submit" className="continue-btn">
         <div class="continue-btn-wrapper">
           <div id="continue-btn" className="primaryBtn commonBtn continueBtn">
             <span class="cont-text">Job Hunt!</span>
           </div>
         </div>
-            </button>
+        </button>
     </form>
     </article>
 )
