@@ -2,7 +2,7 @@ import React from 'react'
 import './ProfessionalDetails.css';
 import { Link } from "react-router-dom";
 
-const ProfessionalDetails = () => {
+const ProfessionalDetails = ({professionClick}) => {
   return (
     <article className='professionalContainer'>
     <div>
@@ -33,8 +33,8 @@ const ProfessionalDetails = () => {
       <p className='detailPara'>still in school/college</p>
 </div>
       </div>
-      <Link to="/jobPreferenceForm">
-            <button type="submit" className="continueBtn">
+      <Link to="/educationdetailsform">
+            <button type="submit" className="continueBtn" onClick={professionClick}>
               Continue
             </button>
             </Link>

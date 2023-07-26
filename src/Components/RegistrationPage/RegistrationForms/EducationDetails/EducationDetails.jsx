@@ -3,7 +3,7 @@ import './EducationDetails.css';
 import { Link } from "react-router-dom";
 
 
-const EducationDetails = () => {
+const EducationDetails = ({eduClick}) => {
   return (
     <article className="eduContainer">
         <div>
@@ -56,7 +56,7 @@ const EducationDetails = () => {
           />
         </div>
         <Link to="/jobPreferenceForm">
-            <button type="submit" className="continueBtn">
+            <button type="submit" className="continueBtn" onClick={eduClick}>
               Continue
             </button>
             </Link>
