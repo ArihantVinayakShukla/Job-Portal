@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./BasicDetails.css";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"; // Import both icons
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { BiUpload } from "react-icons/bi" ;
 
 const BasicDetails = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -11,15 +12,16 @@ const BasicDetails = () => {
   return (
     <article className="basicDiv">
       <h1 className="form-heading">Create an account</h1>
+      <form className="basicForm">
       <div className="resumeDiv">
         <p>Upload Resume</p>
         <input type="file" id="fileInput" />
+        <BiUpload className="uploadIcon"/>
       </div>
       <div className="fieldContainer">
         <div className="fieldGroup">
           <label htmlFor="fullName" className="formLabel">
             Full Name
-            <span className="required">*</span>
           </label>
           <input
             id="fullName"
@@ -27,12 +29,13 @@ const BasicDetails = () => {
             placeholder="Enter your full name"
             autoComplete="nope"
             className="formField"
+            required
           />
         </div>
         <div className="fieldGroup">
           <label htmlFor="emailId" className="formLabel">
             Email ID
-            <span className="required">*</span>
+
           </label>
           <input
             id="emailId"
@@ -40,12 +43,13 @@ const BasicDetails = () => {
             placeholder="Enter Email ID"
             autoComplete="nope"
             className="formField"
+            required
           />
         </div>
         <div className="fieldGroup">
           <label htmlFor="password" className="formLabel">
             Password
-            <span className="required">*</span>
+            
           </label>
           <div className="input-group">
             <input
@@ -54,6 +58,7 @@ const BasicDetails = () => {
               autoComplete="nope"
               type={passwordVisible ? "text" : "password"}
               className="formField"
+              required
             />
             <button className="eye-btn" type="button" onClick={togglePasswordVisibility}>
               {passwordVisible ? <AiFillEyeInvisible /> : <AiFillEye />}
@@ -62,7 +67,7 @@ const BasicDetails = () => {
         </div>
         <div className="fieldGroup">
           <label className="formLabel">
-            Gender <span className="required">*</span>
+            Gender 
           </label>
           <div className="genderBox">
             <div className="choiceGroupContainer">
@@ -73,6 +78,7 @@ const BasicDetails = () => {
                   className="radioBoxField"
                   name="gender"
                   value="Male"
+                  required
                 />
                 Male
               </label>
@@ -83,6 +89,7 @@ const BasicDetails = () => {
                   className="radioBoxField"
                   name="gender"
                   value="Female"
+                  required
                 />
                 Female
               </label>
@@ -93,13 +100,14 @@ const BasicDetails = () => {
                   className="radioBoxField"
                   name="gender"
                   value="Prefer not to say"
+                  required
                 />
                 Prefer not to say
               </label>
             </div>
           </div>
         </div>
-            <button type="button" className="continue-btn">
+            <button type="submit" className="continue-btn">
         <div class="continue-btn-wrapper">
           <div id="continue-btn" className="primaryBtn commonBtn continueBtn">
             <span class="cont-text">Continue</span>
@@ -107,6 +115,7 @@ const BasicDetails = () => {
         </div>
             </button>
       </div>
+            </form>
     </article>
   );
 };

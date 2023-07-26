@@ -1,0 +1,141 @@
+.eduContainer{
+    width:60%;
+}
+
+.eduHeading{
+    font-size:40px;
+}
+.eduHeadingPara{
+    margin-top: 5px;
+    color: rgb(176, 174, 174);
+    margin-bottom: 30px;
+}
+.basicDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .basicForm{
+    width:60%;
+  }
+  .resumeDiv {
+    border: 3px solid limegreen;
+    border-style: dashed;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    font-size:15px;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    color: limegreen;
+    background-color: rgb(241, 255, 241);
+  }
+  
+  .form-heading {
+    font-size: 40px;
+  }
+  .fieldContainer {
+    width: 100%;
+  }
+  .fieldGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    margin: 16px 0px;
+  }
+  .formField {
+    width: 100%;
+    color: #a5a3ae;
+  }
+  .formLabel {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  .fieldGroup .formField {
+    color: #1d1934;
+    font-size: 14px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+    margin: 4px 0 0;
+    border: 1px solid #d2d1d6;
+    border-radius: 6px;
+    height: 42px;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .formField {
+    padding-right: 40px;
+  }
+  
+  .eye-btn {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    /* transform: translateY(-50%); */
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .choiceGroupContainer {
+    margin-top: 5px;
+  }
+  
+  .fieldGroup .choiceGroupContainer .radioChoice {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+  }
+  .continue-btn{
+      background: none;
+      border: none;
+      text-decoration: none;
+      width: 100%;
+  }
+  .continue-btn-wrapper {
+      z-index: 0;
+      background-color: red;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: relative;
+      box-shadow: none;
+      background: none;
+      margin-top: 20px;
+    }
+    .continue-btn-wrapper .continueBtn {
+      width: 50%;
+    }
+    .primaryBtn {
+      color: #fff;
+      background: limegreen;
+      border-radius: 8px;
+      font-size: 18px ;
+      border: 1px solid green;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+    }
+    .commonBtn {
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
