@@ -1,104 +1,103 @@
-.jobContainer{
-    width:60%;
+.jobContainer {
+  width: 60%;
 }
-.basicForms{
-    width: 100%;
-
+.basicForms {
+  width: 100%;
 }
-.jobHeading{
-    font-size:40px;
+.jobHeading {
+  font-size: 40px;
 }
 .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .dropdown-container {
-    width: 30%;
-    margin-bottom: 3%;
-  }
-.heading{
-    font-size: 20px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.fields{
-    display:flex;
-    flex-direction: column;
+.dropdown-container {
+  width: 30%;
+  margin-bottom: 3%;
 }
-.value{
-    font-size: 20px;
+.heading {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-.jobHeadingPara{
-    margin-top: 5px;
-    color: rgb(176, 174, 174);
-    margin-bottom: 30px;
+.fields {
+  display: flex;
+  flex-direction: column;
 }
-.checkboxDi{
-    width: 30%;
-    height: 80px;
-    border: 2px solid rgb(176, 174, 174);
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    border-radius:10px;
+.value {
+  font-size: 20px;
 }
-.checkboxDi input{
-    width:15%;
-    margin-right: 20px;
+.jobHeadingPara {
+  margin-top: 5px;
+  color: rgb(176, 174, 174);
+  margin-bottom: 30px;
 }
-.continue-btn{
-    background: none;
-    border: none;
-    text-decoration: none;
-    width: 100%;
+.checkboxDi {
+  width: 30%;
+  height: 80px;
+  border: 2px solid rgb(176, 174, 174);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 10px;
+}
+.checkboxDi input {
+  width: 15%;
+  margin-right: 20px;
+}
+.continue-btn {
+  background: none;
+  border: none;
+  text-decoration: none;
+  width: 100%;
 }
 .continue-btn-wrapper {
-    z-index: 0;
-    background-color: red;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
-    box-shadow: none;
-    background: none;
-    margin-top: 20px;
-  }
-  .continue-btn-wrapper .continueBtn {
-    width: 40%;
-  }
-  .primaryBtn {
-    color: #fff;
-    background: limegreen;
-    border-radius: 8px;
-    font-size: 18px ;
-    border: 1px solid green;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-  }
-  .commonBtn {
-    padding: 12px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-  }
-input[type="radio"]{
-    accent-color: green;
+  z-index: 0;
+  background-color: red;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  box-shadow: none;
+  background: none;
+  margin-top: 20px;
 }
-.twoDiv{
-    width:100%;
-    display: flex;
-    gap: 20px;
+.continue-btn-wrapper .continueBtn {
+  width: 40%;
 }
-.continueBtn{
-    margin-top: 10px;
-    color:#fff;
-    background-color: limegreen;
-    border-radius: 8px;
-    width:40%;
-    height:35px;
-    font-size: 18px ;
-    border: 1px solid green;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-  } 
+.primaryBtn {
+  color: #fff;
+  background: limegreen;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 1px solid green;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.commonBtn {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+input[type="radio"] {
+  accent-color: green;
+}
+.twoDiv {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.continueBtn {
+  margin-top: 10px;
+  color: #fff;
+  background-color: limegreen;
+  border-radius: 8px;
+  width: 40%;
+  height: 35px;
+  font-size: 18px;
+  border: 1px solid green;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

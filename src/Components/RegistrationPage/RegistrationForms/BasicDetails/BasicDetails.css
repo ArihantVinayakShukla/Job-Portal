@@ -10,8 +10,8 @@
   align-items: center;
   gap: 60px;
 }
-.basicForm{
-  width:60%;
+.basicForm {
+  width: 60%;
 }
 .resumeDiv {
   border: 3px solid limegreen;
@@ -19,7 +19,7 @@
   padding: 20px;
   border-radius: 15px;
   display: flex;
-  font-size:15px;
+  font-size: 15px;
   justify-content: space-between;
   width: 100%;
   position: relative;
@@ -96,28 +96,28 @@
   height: auto;
   font-size: 15px;
 }
-.continueBtn{
+.continueBtn {
   margin-top: 10px;
-  color:#fff;
+  color: #fff;
   background-color: limegreen;
   border-radius: 8px;
-  width:40%;
-  height:35px;
-  font-size: 18px ;
+  width: 40%;
+  height: 35px;
+  font-size: 18px;
   border: 1px solid green;
   cursor: pointer;
-  transition: all .3s ease-in-out;
-} 
+  transition: all 0.3s ease-in-out;
+}
 /* Link{
   text-decoration: none;
 } */
-  #fileInput{
-    opacity: 0;
-  }
-  .uploadIcon{
-    position: absolute;
-    margin-right: 10px;
-    font-size:30px;
-    right:15%;
-    cursor: pointer;
-  }
+#fileInput {
+  opacity: 0;
+}
+.uploadIcon {
+  position: absolute;
+  margin-right: 10px;
+  font-size: 30px;
+  right: 15%;
+  cursor: pointer;
+}

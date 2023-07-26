@@ -1,78 +1,77 @@
-.sideNumberBarArticle{
-    width:35%;
-    display: flex;
-    justify-content: flex-end;
+.sideNumberBarArticle {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
 }
-.numberCircle{
-    width:60PX;
-    height:60px;
-    border: 4px solid rgb(218, 216, 216);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 180%;
-    font-weight: 400;
-    color:rgb(218, 216, 216);
-    cursor: pointer;
-}
-
-.line{
-    height:40px;
-    background: rgb(218, 216, 216);
-    width:4px;
-    margin-left: 11%;
-
-}
-.abc{
-    display: flex;
-    gap:20px;
-    align-items: center;
-}
-.activeCircle{
-    border: 4px solid limegreen;
-    color: black;
-    width:60PX;
-    height:60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 180%;
-    font-weight: 400;
-    cursor: pointer;
-}
-.activeLine{
-    background: limegreen;
-    height:40px;
-    width:4px;
-    margin-left: 11%;
+.numberCircle {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgb(218, 216, 216);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 180%;
+  font-weight: 400;
+  color: rgb(218, 216, 216);
+  cursor: pointer;
 }
 
-.sideText{
-    color:rgb(218, 216, 216);
-    cursor: pointer;
+.line {
+  height: 40px;
+  background: rgb(218, 216, 216);
+  width: 4px;
+  margin-left: 11%;
 }
-.activeText{
-    color: black;
+.abc {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
-.completedCircle{
-    border: 4px solid limegreen;
-    color: limegreen;
-    background-color: #fff !important;
-    width:60PX;
-    height:60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2000%;
-    font-weight: 400;
-    cursor: pointer;
-    background-color: limegreen;
+.activeCircle {
+  border: 4px solid limegreen;
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 180%;
+  font-weight: 400;
+  cursor: pointer;
+}
+.activeLine {
+  background: limegreen;
+  height: 40px;
+  width: 4px;
+  margin-left: 11%;
+}
+
+.sideText {
+  color: rgb(218, 216, 216);
+  cursor: pointer;
+}
+.activeText {
+  color: black;
+}
+.completedCircle {
+  border: 4px solid limegreen;
+  color: limegreen;
+  background-color: #fff !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2000%;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: limegreen;
 }
