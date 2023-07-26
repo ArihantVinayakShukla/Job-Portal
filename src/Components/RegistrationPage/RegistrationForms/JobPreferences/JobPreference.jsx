@@ -54,10 +54,7 @@ return(
         <div>
         <h2 className="value">Freshers Job</h2>
         </div>
-        
       </div>
-      
-
       <div className='checkboxDiv'>
         <input type="radio" name="profession" required/>
         <div>
