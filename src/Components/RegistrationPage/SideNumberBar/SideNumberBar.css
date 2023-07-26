@@ -1,17 +1,11 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 .sideNumberBarArticle{
     width:35%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .container{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     margin-right: 10px;
 }
 .numberCircle{
