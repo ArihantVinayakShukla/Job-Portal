@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BasicDetails.css";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { BiUpload } from "react-icons/bi" ;
+import { Link } from "react-router-dom";
 
 const BasicDetails = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -107,14 +108,12 @@ const BasicDetails = () => {
             </div>
           </div>
         </div>
-            <button type="submit" className="continue-btn">
-        <div class="continue-btn-wrapper">
-          <div id="continue-btn" className="primaryBtn commonBtn continueBtn">
-            <span class="cont-text">Continue</span>
-          </div>
-        </div>
+            </div>
+        <Link to="/jobPreferenceForm">
+            <button type="submit" className="continueBtn">
+              Continue
             </button>
-      </div>
+            </Link>
             </form>
     </article>
   );

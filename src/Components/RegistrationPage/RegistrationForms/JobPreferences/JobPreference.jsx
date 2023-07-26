@@ -1,6 +1,8 @@
 import React ,{useState} from "react";
 import './JobPreference.css'
 import Select from "react-select";
+import { Link } from "react-router-dom";
+
 
 function JobPreference(){
     const [selectedOptions, setSelectedOptions] = useState();
@@ -29,8 +31,8 @@ return(
     </h1>
     <p className="jobHeadingPara">Helps to find better matching jobs</p>
     </div>
-    <form className="basicForm">
-        <div className="fieldGroup">
+    <form className="basicForms">
+        <div className="fields">
         <label  className="heading">
             Preferred Location
           </label>
@@ -49,13 +51,13 @@ return(
     <div className="fieldGroup">
         <h2 className="heading">What are you currently looking for?</h2>
       <div className="twoDiv">
-    <div className='checkboxDiv'>
+    <div className='checkboxDi'>
         <input type="radio" name="profession" required/>
         <div>
         <h2 className="value">Freshers Job</h2>
         </div>
       </div>
-      <div className='checkboxDiv'>
+      <div className='checkboxDi'>
         <input type="radio" name="profession" required/>
         <div>
         <h2 className="value">Internship</h2>
@@ -66,13 +68,13 @@ return(
       <div className="fieldGroup">
       <h2 className="heading">Job type</h2>
       <div className="twoDiv">
-      <div className="checkboxDiv">
+      <div className="checkboxDi">
         <input type="radio" name="typejob" required></input>
         <div>
             <h2 className="value">Full time</h2>
         </div>
       </div>
-      <div className="checkboxDiv">
+      <div className="checkboxDi">
         <input type="radio" name="typejob" required></input>
         <div>
             <h2 className="value">Part time</h2>
@@ -80,13 +82,11 @@ return(
       </div>
       </div>
       </div>
-      <button type="submit" className="continue-btn">
-        <div class="continue-btn-wrapper">
-          <div id="continue-btn" className="primaryBtn commonBtn continueBtn">
-            <span class="cont-text">Job Hunt!</span>
-          </div>
-        </div>
-        </button>
+      <Link to="/educationDetailsForm">
+            <button type="submit" className="continueBtn">
+              Continue
+            </button>
+            </Link>
     </form>
     </article>
 )

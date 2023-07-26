@@ -1,5 +1,6 @@
 import React from 'react'
-import './ProfessionalDetails.css'
+import './ProfessionalDetails.css';
+import { Link } from "react-router-dom";
 
 const ProfessionalDetails = () => {
   return (
@@ -32,13 +33,11 @@ const ProfessionalDetails = () => {
       <p className='detailPara'>still in school/college</p>
 </div>
       </div>
-      <button type="submit" className="continue-btn">
-        <div class="continue-btn-wrapper">
-          <div id="continue-btn" className="primaryBtn commonBtn continueBtn">
-            <span class="cont-text">Continue</span>
-          </div>
-        </div>
+      <Link to="/jobPreferenceForm">
+            <button type="submit" className="continueBtn">
+              Continue
             </button>
+            </Link>
     </form>
     </article>
   )

@@ -20,19 +20,7 @@
   .basicForm{
     width:60%;
   }
-  .resumeDiv {
-    border: 3px solid limegreen;
-    border-style: dashed;
-    padding: 20px;
-    border-radius: 15px;
-    display: flex;
-    font-size:15px;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    color: limegreen;
-    background-color: rgb(241, 255, 241);
-  }
+  
   
   .form-heading {
     font-size: 40px;
@@ -104,38 +92,15 @@
     height: auto;
     font-size: 15px;
   }
-  .continue-btn{
-      background: none;
-      border: none;
-      text-decoration: none;
-      width: 100%;
-  }
-  .continue-btn-wrapper {
-      z-index: 0;
-      background-color: red;
-      flex-direction: row;
-      justify-content: flex-start;
-      position: relative;
-      box-shadow: none;
-      background: none;
-      margin-top: 20px;
-    }
-    .continue-btn-wrapper .continueBtn {
-      width: 50%;
-    }
-    .primaryBtn {
-      color: #fff;
-      background: limegreen;
-      border-radius: 8px;
-      font-size: 18px ;
-      border: 1px solid green;
-      cursor: pointer;
-      transition: all .3s ease-in-out;
-    }
-    .commonBtn {
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-    }
+  .continueBtn{
+    margin-top: 10px;
+    color:#fff;
+    background-color: limegreen;
+    border-radius: 8px;
+    width:40%;
+    height:35px;
+    font-size: 18px ;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  } 

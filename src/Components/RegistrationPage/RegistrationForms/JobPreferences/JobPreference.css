@@ -1,7 +1,7 @@
 .jobContainer{
-    width:70%;
+    width:60%;
 }
-.basicform{
+.basicForms{
     width: 100%;
 
 }
@@ -22,7 +22,7 @@
     font-size: 20px;
     margin-bottom: 10px;
 }
-.fieldGroup{
+.fields{
     display:flex;
     flex-direction: column;
 }
@@ -34,8 +34,8 @@
     color: rgb(176, 174, 174);
     margin-bottom: 30px;
 }
-.checkboxDiv{
-    width: 40%;
+.checkboxDi{
+    width: 30%;
     height: 80px;
     border: 2px solid rgb(176, 174, 174);
     padding: 20px;
@@ -43,8 +43,8 @@
     display: flex;
     border-radius:10px;
 }
-.checkboxDiv input{
-    width:7%;
+.checkboxDi input{
+    width:15%;
     margin-right: 20px;
 }
 .continue-btn{
@@ -86,6 +86,19 @@ input[type="radio"]{
     accent-color: green;
 }
 .twoDiv{
+    width:100%;
     display: flex;
     gap: 20px;
 }
+.continueBtn{
+    margin-top: 10px;
+    color:#fff;
+    background-color: limegreen;
+    border-radius: 8px;
+    width:40%;
+    height:35px;
+    font-size: 18px ;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  } 
