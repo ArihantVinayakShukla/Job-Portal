@@ -2,17 +2,22 @@ import React, { useState } from "react";
 import "./BasicDetails.css";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { BiUpload } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const BasicDetails = ({ onClick }) => {
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const navigate = useNavigate();
   const [payload, updatePayload] = useState({
     name: "",
     email: "",
     password: "",
-    gender: ""
   });
-
+function onsubmithandler(event){
+  event.preventDefault();
+  sessionStorage.setItem("payload",JSON.stringify(payload));
+  console.log(payload);
+  navigate("/Register/professionalDetailsForm");
+}
   const togglePasswordVisibility = () => {
     setPasswordVisible((prev) => !prev);
   };
@@ -28,7 +33,7 @@ const BasicDetails = ({ onClick }) => {
   return (
     <article className="basicDiv">
       <h1 className="form-heading">Create an account</h1>
-      <form className="basicForm">
+      <form className="basicForm" onSubmit={onsubmithandler}>
         <div className="resumeDiv">
           <p>Upload Resume</p>
           <input type="file" id="fileInput" />
@@ -92,7 +97,7 @@ const BasicDetails = ({ onClick }) => {
               <div className="choiceGroupContainer">
                 <label className="radioChoice">
                   <input
-                    id="option0"
+                    id="gender"
                     type="radio"
                     className="radioBoxField"
                     name="gender"
@@ -104,7 +109,7 @@ const BasicDetails = ({ onClick }) => {
                 </label>
                 <label className="radioChoice">
                   <input
-                    id="option1"
+                    id="gender"
                     type="radio"
                     className="radioBoxField"
                     name="gender"
@@ -116,7 +121,7 @@ const BasicDetails = ({ onClick }) => {
                 </label>
                 <label className="radioChoice">
                   <input
-                    id="option2"
+                    id="gender"
                     type="radio"
                     className="radioBoxField"
                     name="gender"
@@ -130,11 +135,8 @@ const BasicDetails = ({ onClick }) => {
             </div>
           </div>
         </div>
-        <Link to="/Register/professionalDetailsForm">
-          <button type="submit" className="continueBtn" onClick={onClick}>
-            Continue
-          </button>
-        </Link>
+     
+          <input type="submit" className="continueBtn" value = "Continue" onClick={onClick}/>        
       </form>
     </article>
   );

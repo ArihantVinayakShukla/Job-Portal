@@ -1,10 +1,28 @@
 import React, { useState } from "react";
 import "./JobPreference.css";
 import Select from "react-select";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function JobPreference() {
+  const [jobPayload,updatejobPayload] = useState({location:"",job:"",jobtype:""});
   const [selectedOptions, setSelectedOptions] = useState();
+  const navigate = useNavigate();
+
+  function onsubmithandler(event){
+    event.preventDefault();
+    navigate("/");
+  let jobpayloadNew = JSON.parse(sessionStorage.getItem("edupayloadNew"))
+  jobpayloadNew = {...jobpayloadNew,...jobPayload};
+  console.log(jobpayloadNew);
+  sessionStorage.setItem("edupayloadNew",JSON.stringify(jobpayloadNew));
+  }
+  function onchangehandler(event) {
+    let id = event?.target?.id;
+    let value = event?.target?.value;
+    let updatedJobPayload = { ...jobPayload };
+    updatedJobPayload[id] = value;
+    updatejobPayload(updatedJobPayload);
+  }
 
   // Array of all options
   const optionList = [
@@ -28,7 +46,7 @@ function JobPreference() {
         <h1 className="jobHeading">Job Preferences</h1>
         <p className="jobHeadingPara">Helps to find better matching jobs</p>
       </div>
-      <form className="basicForms">
+      <form className="basicForms" onSubmit={onsubmithandler}>
         <div className="fields">
           <label className="heading">Preferred Location</label>
           <div className="dropdown-container">
@@ -40,6 +58,7 @@ function JobPreference() {
               isSearchable={true}
               isMulti
               required
+              id="location"
             />
           </div>
         </div>
@@ -47,13 +66,13 @@ function JobPreference() {
           <h2 className="heading">What are you currently looking for?</h2>
           <div className="twoDiv">
             <div className="checkboxDi">
-              <input type="radio" name="profession" required />
+              <input type="radio" name="profession" id="job" value="freshers-job"          onChange = {onchangehandler} required />
               <div>
                 <h2 className="value">Freshers Job</h2>
               </div>
             </div>
             <div className="checkboxDi">
-              <input type="radio" name="profession" required />
+              <input type="radio" name="profession" id ="job" value="internship"         onChange = {onchangehandler} required />
               <div>
                 <h2 className="value">Internship</h2>
               </div>
@@ -64,24 +83,20 @@ function JobPreference() {
           <h2 className="heading">Job type</h2>
           <div className="twoDiv">
             <div className="checkboxDi">
-              <input type="radio" name="typejob" required></input>
+              <input type="radio" name="typejob" required id="jobtype" value="full-time"         onChange = {onchangehandler}></input>
               <div>
                 <h2 className="value">Full time</h2>
               </div>
             </div>
             <div className="checkboxDi">
-              <input type="radio" name="typejob" required></input>
+              <input type="radio" name="typejob" required id="jobtype" value="part-time"         onChange = {onchangehandler}></input>
               <div>
                 <h2 className="value">Part time</h2>
               </div>
             </div>
           </div>
         </div>
-        <Link to="/educationDetailsForm">
-          <button type="submit" className="continueBtn">
-            Continue
-          </button>
-        </Link>
+          <input type="submit" value="Job Hunt!" className="continueBtn"/>
       </form>
     </article>
   );

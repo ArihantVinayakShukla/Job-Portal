@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EducationDetails.css";
-import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const EducationDetails = ({ eduClick }) => {
+  const [educationPayload,updateeducationPayload] = useState({degree:"",university:"",graduation:""});
+  const navigate = useNavigate();
+  function onsubmithandler(event){
+    event.preventDefault();
+    navigate("/Register/jobPreferenceform");
+  let edupayloadNew = JSON.parse(sessionStorage.getItem("payloadNew"))
+  edupayloadNew = {...edupayloadNew,...educationPayload};
+  console.log(edupayloadNew);
+  sessionStorage.setItem("payloadNew",JSON.stringify(edupayloadNew));
+  }
+  function onchangehandler(event) {
+    let id = event?.target?.id;
+    let value = event?.target?.value;
+    let updatedEducationPayload = { ...educationPayload };
+    updatedEducationPayload[id] = value;
+    updateeducationPayload(updatedEducationPayload);
+  }
   return (
     <article className="eduContainer">
       <div>
@@ -11,19 +28,20 @@ const EducationDetails = ({ eduClick }) => {
           Tell recruiters about your educational qualifications
         </p>
       </div>
-      <form className="basicForm">
+      <form className="basicForm" onSubmit={onsubmithandler}>
         <div className="fieldContainer">
           <div className="fieldGroup">
             <label htmlFor="fullName" className="formLabel">
               Highest Qualification
             </label>
             <input
-              id="fullName"
+              id="degree"
               type="text"
               placeholder="Enter your Degree"
               autoComplete="nope"
               className="formField"
               required
+              onChange={onchangehandler}
             />
           </div>
           <div className="fieldGroup">
@@ -31,12 +49,13 @@ const EducationDetails = ({ eduClick }) => {
               University/Institute
             </label>
             <input
-              id="emailId"
-              type="email"
+              id="university"
+              type="text"
               placeholder="Enter Your Institute name"
               autoComplete="nope"
               className="formField"
               required
+              onChange={onchangehandler}
             />
           </div>
           <div className="fieldGroup">
@@ -44,19 +63,16 @@ const EducationDetails = ({ eduClick }) => {
               Year of Graduation
             </label>
             <input
-              id="emailId"
-              type="email"
+              id="graduation"
+              type="text"
               placeholder="Enter the year of graduation"
               autoComplete="nope"
               className="formField"
               required
+              onChange={onchangehandler}
             />
           </div>
-          <Link to="/Register/jobPreferenceForm">
-            <button type="submit" className="continueBtn" onClick={eduClick}>
-              Continue
-            </button>
-          </Link>
+            <input type="submit" className="continueBtn" onClick={eduClick} value="continue-btn"/>
         </div>
       </form>
     </article>
