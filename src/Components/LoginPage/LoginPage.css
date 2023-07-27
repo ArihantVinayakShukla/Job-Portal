@@ -1,0 +1,142 @@
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 40%;
+    background-color: rgb(214, 241, 214);
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* transform: translateX(0); */
+    transition:  2s;
+    animation: left-slide forwards 1s ease;
+    transform: translateX(100%);
+
+}
+
+@keyframes left-slide {
+    to{
+        transform: translateX(0%);
+    }
+    
+}
+
+.x-mark{
+    position: absolute;
+    top:50px;
+    left:50px;
+    cursor: pointer;
+}
+
+.lgn-container {
+    position: relative;
+    width: 22.2rem;
+}
+.form-container {
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    z-index: 99;
+    padding: 2rem;
+}
+
+.lgn-container form input {
+    display: block;
+    padding: 14.5px;
+    width: 100%;
+    margin: 2rem 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    backdrop-filter: blur(15px);
+}
+
+.lgn-container form button {
+    background-color: limegreen;
+    color: var(#ffffff);
+    display: block;
+    padding: 13px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all 0.1s ease-in-out;
+    border: none;
+}
+
+.lgn-container form button:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.circle {
+    width: 8rem;
+    height: 8rem;
+    background: limegreen;
+    border-radius: 50%;
+    position: absolute  ;
+}
+
+
+.circle-one {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-45%, -45%);
+}
+
+.circle-two {
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: translate(45%, 45%);
+}
+
+.register-forget {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.opacity {
+    opacity: 0.6;
+}
+
+.theme-btn-container {
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+}
+
+.style-reg{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.pass{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.pass div{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
