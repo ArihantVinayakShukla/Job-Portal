@@ -52,7 +52,7 @@ const EducationDetails = ({ eduClick }) => {
               required
             />
           </div>
-          <Link to="/jobPreferenceForm">
+          <Link to="/Register/jobPreferenceForm">
             <button type="submit" className="continueBtn" onClick={eduClick}>
               Continue
             </button>

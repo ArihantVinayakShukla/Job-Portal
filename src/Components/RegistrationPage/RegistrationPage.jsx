@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./RegistrationPage.css";
 import SideNumberBar from "./SideNumberBar/SideNumberBar.jsx";
 import RegistrationForms from "./RegistrationForms/RegistrationForms.jsx";
-import { BiSolidBookmark } from "react-icons/bi";
+import Loader from './Loader.jsx';
+
 
 const RegistrationPage = () => {
   const [click, setClick] = useState(false);
@@ -32,9 +33,7 @@ const RegistrationPage = () => {
   return (
     <>
         {
-      loader ? <div className="loader">
-        <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-      </div>
+      loader ? <Loader/>
       : 
       <>
       

@@ -10,7 +10,7 @@ const BasicDetails = ({ onClick }) => {
     name: "",
     email: "",
     password: "",
-    gender: "",
+    gender: ""
   });
 
   const togglePasswordVisibility = () => {
@@ -130,7 +130,7 @@ const BasicDetails = ({ onClick }) => {
             </div>
           </div>
         </div>
-        <Link to="/professionalDetailsForm">
+        <Link to="/Register/professionalDetailsForm">
           <button type="submit" className="continueBtn" onClick={onClick}>
             Continue
           </button>

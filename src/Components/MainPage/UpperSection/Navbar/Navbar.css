@@ -1,0 +1,28 @@
+.NavSection{
+    display:flex;
+    justify-content: space-between;
+    padding: 2.5% 5%;
+}
+@font-face {
+    font-family: "Hunt";
+    src: url("./disoluta-ffp/Disoluta-font-FFP.ttf");
+}
+.logo{
+  font-family: "Hunt";
+  font-size: 40px;
+}
+.loginRegisterBtn{
+    color: limegreen;
+    background-color: transparent;
+    border-radius: 8px;
+    width: 15%;
+    height: 35px;
+    font-size: 20px;
+    border: 1px solid limegreen;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.loginRegisterBtn:hover{
+    color:white;
+    background-color: limegreen;
+}

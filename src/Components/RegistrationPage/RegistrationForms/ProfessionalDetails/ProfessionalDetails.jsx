@@ -33,7 +33,7 @@ const ProfessionalDetails = ({ professionClick }) => {
             <p className="detailPara">still in school/college</p>
           </div>
         </div>
-        <Link to="/educationdetailsform">
+        <Link to="/Register/educationdetailsform">
           <button
             type="submit"
             className="continueBtn"

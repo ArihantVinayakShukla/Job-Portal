@@ -1,0 +1,17 @@
+.upperContentContainer{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hiredHeading{
+    font-size: 2vw;
+}
+.typingText{
+    font-size: 2vw;
+    color: limegreen;
+    font-weight: 600;
+}
+.cursor{
+    background-color: black;
+}

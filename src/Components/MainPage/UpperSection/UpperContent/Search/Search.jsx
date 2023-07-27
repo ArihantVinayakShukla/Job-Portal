@@ -42,7 +42,6 @@ const Search = () => {
 
   return (
     <div className='search-con'>
-        <p>Inspiring Youths To Get Hired</p>
         <div className='searching'>
             
             <div className='search'>
@@ -51,7 +50,7 @@ const Search = () => {
             </div>
             <div className='locations' >
                 {
-                    loc == 0 ? "Locations" : <>{loc} selected</>
+                    loc === 0 ? "Locations" : <>{loc} selected</>
 
                 }
                 <i className="fa-solid fa-angle-down" onClick={changelocation} style={{color:"gray"}}></i>
