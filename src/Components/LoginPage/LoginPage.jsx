@@ -27,16 +27,16 @@ const LoginPage = ({login , handlelogin}) => {
             <div className="form-container">
                 <h1 className="opacity">LOGIN</h1>
                 <form >
-                    <input type="email" placeholder="EMAIL" />
+                    <input type="email" placeholder="EMAIL"  autoComplete='off' required/>
                     <div className='pass'>
-                      <input type={password ? "text":"password"} placeholder="PASSWORD" />
+                      <input type={password ? "text":"password"}  autoComplete = "off" placeholder="PASSWORD" required />
                       <div>
                           {
                             password ?  <AiFillEye onClick={handlepassword}/> : <AiFillEyeInvisible  onClick={handlepassword}/>
                           }
                       </div>
                     </div>
-                    <button className="opacity">SUBMIT</button>
+                    <input type='submit' value="submit" className="opacity submitBtn"/>
                 </form>
                 <div className="register-forget opacity">
                     <p>New to Jobivist?</p>

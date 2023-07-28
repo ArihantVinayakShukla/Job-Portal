@@ -59,7 +59,7 @@
     backdrop-filter: blur(15px);
 }
 
-.lgn-container form button {
+.lgn-container form .submitBtn{
     background-color: limegreen;
     color: var(#ffffff);
     display: block;

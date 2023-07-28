@@ -31,10 +31,11 @@
 
 .btns{
     position: absolute;
-    right: 18%;
-    top: 10%;
+    right: 6%;
+    top: 15%;
     display: flex;
     gap: 10px;
+
 }
 
 
