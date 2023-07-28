@@ -103,6 +103,7 @@ const Search = () => {
             styles={customStyles}
             required
             id="location"
+            isMulti
           />
 
           <Select
