@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import "./EducationDetails.css";
 import {  useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const EducationDetails = ({ eduClick }) => {
   const [educationPayload,updateeducationPayload] = useState({degree:"",university:"",graduation:""});
   const navigate = useNavigate();
-  function onsubmithandler(event){
+  function onsubmithandler(event) {
     event.preventDefault();
     navigate("/Register/jobPreferenceform");
-  let edupayloadNew = JSON.parse(sessionStorage.getItem("payloadNew"))
-  edupayloadNew = {...edupayloadNew,...educationPayload};
-  console.log(edupayloadNew);
-  sessionStorage.setItem("payloadNew",JSON.stringify(edupayloadNew));
+    let payloadNew = JSON.parse(sessionStorage.getItem("professionPayload"));
+    payloadNew = { ...payloadNew, ...educationPayload };
+    console.log("payloadNew: ", payloadNew);
+    sessionStorage.setItem("educationPayload", JSON.stringify(payloadNew));
   }
+  
   function onchangehandler(event) {
     let id = event?.target?.id;
     let value = event?.target?.value;
@@ -72,7 +74,7 @@ const EducationDetails = ({ eduClick }) => {
               onChange={onchangehandler}
             />
           </div>
-            <input type="submit" className="continueBtn" onClick={eduClick} value="continue-btn"/>
+            <input type="submit" className="continueBtn" onClick={eduClick} value="Continue"/>
         </div>
       </form>
     </article>

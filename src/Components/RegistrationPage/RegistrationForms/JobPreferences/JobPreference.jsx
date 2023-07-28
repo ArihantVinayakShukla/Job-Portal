@@ -2,20 +2,37 @@ import React, { useState } from "react";
 import "./JobPreference.css";
 import Select from "react-select";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function JobPreference() {
   const [jobPayload,updatejobPayload] = useState({location:"",job:"",jobtype:""});
   const [selectedOptions, setSelectedOptions] = useState();
   const navigate = useNavigate();
 
-  function onsubmithandler(event){
-    event.preventDefault();
-    navigate("/");
-  let jobpayloadNew = JSON.parse(sessionStorage.getItem("edupayloadNew"))
-  jobpayloadNew = {...jobpayloadNew,...jobPayload};
-  console.log(jobpayloadNew);
-  sessionStorage.setItem("edupayloadNew",JSON.stringify(jobpayloadNew));
-  }
+  function onsubmithandler(event) {
+  event.preventDefault();
+  let payloadNew = JSON.parse(sessionStorage.getItem("educationPayload"));
+  payloadNew = { ...payloadNew, ...jobPayload };
+  console.log("payloadNew: ", payloadNew);
+  sessionStorage.setItem("jobPayload", JSON.stringify(payloadNew));
+
+  const url = `${window.API_URL}/user`;
+    console.log('url: ', url);
+
+    axios.post(url, payloadNew)
+      .then((res) => {
+        if (res?.status === 200) {
+          alert(res?.data?.msg);
+          navigate("/");
+        } else {
+          alert(res?.data?.msg);
+        }
+      })
+      .catch((err) => {
+        alert(err?.response?.data?.msg);
+      });
+}
+
   function onchangehandler(event) {
     let id = event?.target?.id;
     let value = event?.target?.value;

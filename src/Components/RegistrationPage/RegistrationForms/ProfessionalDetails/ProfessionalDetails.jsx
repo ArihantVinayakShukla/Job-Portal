@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ProfessionalDetails.css";
 import { useNavigate } from "react-router-dom";
 
+
 const ProfessionalDetails = ({ professionClick }) => {
   const navigate = useNavigate();
   const[professionPayload,updateProfessionPayload] = useState({});
@@ -12,14 +13,15 @@ const ProfessionalDetails = ({ professionClick }) => {
     updatedProfessionPayload[id] = value;
     updateProfessionPayload(updatedProfessionPayload);
   }
-  function onsubmithandler(event){
+  function onsubmithandler(event) {
     event.preventDefault();
     navigate("/Register/educationdetailsform");
-  let payloadNew = JSON.parse(sessionStorage.getItem("payload"))
-  payloadNew = {...payloadNew,...professionPayload};
-  console.log(payloadNew);
-  sessionStorage.setItem("payloadNew",JSON.stringify(payloadNew));
+    let payloadNew = JSON.parse(sessionStorage.getItem("basicPayload"));
+    payloadNew = { ...payloadNew, ...professionPayload };
+    console.log("payloadNew: ", payloadNew);
+    sessionStorage.setItem("professionPayload", JSON.stringify(payloadNew));
   }
+  
   return (
     <article className="professionalContainer">
       <div>

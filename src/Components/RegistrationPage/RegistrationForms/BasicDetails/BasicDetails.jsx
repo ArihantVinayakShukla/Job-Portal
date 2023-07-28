@@ -18,6 +18,13 @@ function onsubmithandler(event){
   console.log(payload);
   navigate("/Register/professionalDetailsForm");
 }
+function onsubmithandler(event) {
+  event.preventDefault();
+  sessionStorage.setItem("basicPayload", JSON.stringify(payload));
+  console.log(payload);
+  navigate("/Register/professionalDetailsForm");
+}
+
   const togglePasswordVisibility = () => {
     setPasswordVisible((prev) => !prev);
   };
@@ -36,7 +43,7 @@ function onsubmithandler(event){
       <form className="basicForm" onSubmit={onsubmithandler}>
         <div className="resumeDiv">
           <p>Upload Resume</p>
-          <input type="file" id="fileInput" />
+          <input type="file" id="fileInput" required/>
           <BiUpload className="uploadIcon" />
         </div>
         <div className="fieldContainer">
