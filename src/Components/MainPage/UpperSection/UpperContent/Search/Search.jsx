@@ -106,7 +106,7 @@ const Search = () => {
           </div>
         </div>
         <div className="sea-btn">
-          <input type="submit" value="Go" />
+          <input type="submit" className="goBtn" value="Go" />
         </div>
     </div>
   );

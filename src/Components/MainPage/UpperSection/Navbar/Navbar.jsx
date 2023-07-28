@@ -28,8 +28,10 @@ const Navbar = () => {
       <button className='loginRegisterBtn' onClick={handleloginreg}>Login/Register</button>
       {
         loginreg && <div className='btns'>
-                        <button className="button-86" onClick={handlelogin}>Login</button>
-                        <Link to="/register" className='button-86' element={<RegistrationPage/>}>Register</Link>
+                      <div tabindex="0" class="button-86" onClick={handlelogin}>
+  <p class="button-86Text" >Login</p>
+</div>
+                        <Link to="/register" className='button-86' element={<RegistrationPage/>}><p className='button-86Text'>Register</p></Link>
                     </div>
       }
       </div>

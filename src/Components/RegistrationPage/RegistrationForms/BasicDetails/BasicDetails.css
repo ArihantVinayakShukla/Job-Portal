@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 .basicDiv {
   width: 60%;
   display: flex;
@@ -27,7 +29,7 @@
   background-color: rgb(241, 255, 241);
 }
 
-.form-heading {
+.formHeading {
   font-size: 40px;
 }
 .fieldContainer {
@@ -121,13 +123,17 @@
   right: 15%;
   cursor: pointer;
 }
-
 @media (max-width: 550px)
 {
   .basicDiv{
     width: 80%;
   }
-  .form-heading{
+  .formHeading{
     font-size: 22px;
+  }
+}
+@media(768px<=width<=843px){
+  .formHeading{
+    font-size: 35px;
   }
 }

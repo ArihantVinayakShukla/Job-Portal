@@ -29,7 +29,6 @@ const UpperContent = () => {
       <span className="typingText">{text}<Cursor className="cursor"/></span>
       <SearchBar/>
       <div>
-        
       </div>
     </div>
   );
