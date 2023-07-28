@@ -49,7 +49,7 @@ const ProfessionalDetails = ({ professionClick }) => {
           <input type="radio" name="profession" required id="profession" value="student"  onChange={onchangehandler} />
           <div>
             <h2>I am Student</h2>
-            <p className="detailPara">still in school/college</p>
+            <p className="detailPara">still studying in school/college</p>
           </div>
         </div>
     

@@ -38,3 +38,18 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 500px)
+{
+  .professionalHeading{
+    font-size: 22px;
+  }
+  .headingPara{
+    font-size: 15px;
+  }
+  .checkboxDiv h2{
+    font-size: 15px;
+  }
+  .detailPara{
+    font-size:12px;
+  }
+}

@@ -73,6 +73,7 @@ function JobPreference() {
               value={selectedOptions}
               onChange={handleSelect}
               isSearchable={true}
+              className="selectTag"
               isMulti
               required
               id="location"

@@ -75,3 +75,39 @@
   cursor: pointer;
   background-color: limegreen;
 }
+
+@media (max-width: 768px) {
+  .sideNumberBarArticle{
+    width: 100%;
+    padding: 3%;  
+    justify-content: center;
+  }
+  .abc{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .container{
+    flex-direction: row;
+    gap: 2%;
+  }
+  .line, .activeLine{
+    display: none;
+  }
+}
+@media (max-width: 410px)
+{
+  .numberCircle{
+    width: 40px;
+    height: 40px;
+    font-size: 120%
+  }
+  .activeCircle{
+    width: 40px;
+    height: 40px;
+    font-size: 120%
+  }
+  .sideText{
+    font-size: 15px;
+  }
+}

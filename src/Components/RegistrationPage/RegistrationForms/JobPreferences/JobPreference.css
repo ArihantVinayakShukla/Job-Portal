@@ -14,8 +14,12 @@
   align-items: center;
 }
 .dropdown-container {
-  width: 30%;
+  width: 100%;
   margin-bottom: 3%;
+  /* background-color: aqua; */
+}
+.selectTag{
+  width:100%;
 }
 .heading {
   font-size: 20px;
@@ -100,4 +104,47 @@ input[type="radio"] {
   border: 1px solid green;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1500px){
+  .checkboxDi{
+    width: 50%;
+  }
+}
+@media (max-width: 950px){
+  .checkboxDi{
+    width: 80%;
+  }
+  .twoDiv{
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px)
+{
+  
+  .checkboxDi{
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+  }
+  .value{
+    font-size:15px;
+  }
+}
+@media (max-width: 470px)
+{
+  .dropdown-container{
+    width: 120%;
+  }
+  .jobHeading{
+    font-size: 22px;
+  }
+  .jobHeadingPara{
+    font-size: 15px;
+  }
+  .heading{
+    font-size: 17px;
+  }
+  .checkboxDi{
+    width: 80%;
+  }
 }

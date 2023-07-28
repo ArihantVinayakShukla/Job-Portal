@@ -20,7 +20,7 @@ const RegistrationPage = () => {
 
 
   function handleClick() {
-    setClick(!click);
+    setClick(true);
   }
   function handleProfessionClick() {
     setProfessionClick(true);

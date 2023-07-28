@@ -33,7 +33,7 @@ function onsubmithandler(event){
   console.log(payload);
   return (
     <article className="basicDiv">
-      <h1 className="form-heading">Create an account</h1>
+      <p className="form-heading">Create an account</p>
       <form className="basicForm" onSubmit={onsubmithandler}>
         <div className="resumeDiv">
           <p>Upload Resume</p>

@@ -18,7 +18,7 @@
   gap: 60px;
 }
 .basicForm {
-  width: 60%;
+  width: 100%;
 }
 
 .form-heading {
@@ -102,4 +102,24 @@
   border: 1px solid green;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px)
+{
+  
+  .basicForm{
+    width:100%;
+  }
+  .fieldGroup .formField{
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 410px)
+{
+  .eduHeading{
+    font-size: 22px;
+  }
+  .eduHeadingPara{
+    font-size: 15px;
+  }
 }
