@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .basicDiv {
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,4 +120,14 @@
   font-size: 30px;
   right: 15%;
   cursor: pointer;
+}
+
+@media (max-width: 550px)
+{
+  .basicDiv{
+    width: 80%;
+  }
+  .form-heading{
+    font-size: 22px;
+  }
 }
