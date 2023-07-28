@@ -1,20 +1,21 @@
 .search-con{
     margin: 50px auto;
     width: 80%;
-}
-
-.searching{
     display: flex;
     height: 50px;
     border-radius: 10px;
-    width: 100%;
     letter-spacing: 2px;
 }
 
 .btnLessDiv{
     display: flex;
     width: 100%;
-    background-color: red;
+    background-color: aqua;
+    padding: 0;
+}
+.selectDiv{
+    display:flex;
+    width: 60%;
 }
 .search{
     height: 50px;
@@ -71,9 +72,9 @@
     cursor: pointer;
 }
 #location{
-    width:25%;
+    width:50%;
 }
 #experience{
-    width: 25%;
+    width: 50%;
 }
 
