@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./EducationDetails.css";
 import {  useNavigate } from "react-router-dom";
-import axios from "axios";
-
 const EducationDetails = ({ eduClick }) => {
   const [educationPayload,updateeducationPayload] = useState({degree:"",university:"",graduation:""});
   const navigate = useNavigate();
@@ -66,7 +64,7 @@ const EducationDetails = ({ eduClick }) => {
             </label>
             <input
               id="graduation"
-              type="text"
+              type="number"
               placeholder="Enter the year of graduation"
               autoComplete="nope"
               className="formField"
