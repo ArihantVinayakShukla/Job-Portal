@@ -85,13 +85,9 @@ const Search = () => {
   return (
     <div className="search-con">
       <div className="searching">
+        <div className="btnLessDiv">
         <div className="search">
           <input id="q" type="text" name="" placeholder="Search Jobs" />
-          <i
-            htmlFor="q"
-            className="fa-solid fa-magnifying-glass"
-            style={{ color: "#ccd2db" }}
-          ></i>
         </div>
 
           <Select
@@ -116,9 +112,10 @@ const Search = () => {
             required
             id="experience"
           />
+          </div>
 
         <div className="sea-btn">
-          <input type="submit" value="Go" className='' />
+          <input type="submit" value="Go"/>
         </div>
       </div>
     </div>

@@ -1,12 +1,6 @@
 .search-con{
     margin: 50px auto;
-    width: 60%;
-}
-
-.search-con p{
-    font-size: 30px;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
+    width: 80%;
 }
 
 .searching{
@@ -15,14 +9,18 @@
     border-radius: 10px;
     width: 100%;
     letter-spacing: 2px;
-    /* column-gap: 20px; */
 }
 
+.btnLessDiv{
+    display: flex;
+    width: 100%;
+    background-color: red;
+}
 .search{
     height: 50px;
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 40%;
     border: 1px solid lightgray;
     background-color: #fff;
     border-radius: 4px;
@@ -37,13 +35,8 @@
     font-size: 15px;
 }
 
-.search i{
-    padding-right: 20px;
-}
-
 .search input:focus{
     outline: none;
-    
 }
 
 .sea-btn{
@@ -52,16 +45,17 @@
     background-color: limegreen;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-    margin-left: 3.3%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .sea-btn input{
     background: transparent;
     border: none;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 
 }
 .sea-btn button{
@@ -76,8 +70,10 @@
     text-align: center;
     cursor: pointer;
 }
-
-
-#experience{
-    margin-left: 6.5%;
+#location{
+    width:25%;
 }
+#experience{
+    width: 25%;
+}
+

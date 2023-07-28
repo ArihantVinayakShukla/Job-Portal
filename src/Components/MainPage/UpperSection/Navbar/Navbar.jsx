@@ -24,6 +24,7 @@ const Navbar = () => {
     <>
     <section className="NavSection  ">
       <h3 className='logo'>JOBIVIST</h3>
+      <div className="btnLoginReg">
       <button className='loginRegisterBtn' onClick={handleloginreg}>Login/Register</button>
       {
         loginreg && <div className='btns'>
@@ -31,6 +32,7 @@ const Navbar = () => {
                         <Link to="/register" className='button-86' element={<RegistrationPage/>}>Register</Link>
                     </div>
       }
+      </div>
     </section>
     {
       login && <LoginPage login={login} handlelogin={handlelogin}/> 

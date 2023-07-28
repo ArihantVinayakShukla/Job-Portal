@@ -11,17 +11,20 @@
   font-family: "Hunt";
   font-size: 40px;
 }
+.btnLoginReg{
+  position: relative;
+  width:12%;
+}
 .loginRegisterBtn{
     color: limegreen;
     background-color: transparent;
     border-radius: 8px;
-    width: 20%;
+    width: 100%;
     height: 35px;
     font-size: 20px;
     border: 1px solid limegreen;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    position: relative;
 }
 .loginRegisterBtn:hover{
     color:white;
@@ -31,18 +34,18 @@
 
 .btns{
     position: absolute;
-    right: 6%;
-    top: 15%;
+    top: 95%;
     display: flex;
-    gap: 10px;
-
+    width: 100%;
+    justify-content:space-around;
+    gap: 5%;
 }
 
 
     
 .button-86 {
   all: unset;
-  width: 100px;
+  /* width: ; */
   height: 30px;
   font-size: 20px;
   background: transparent;

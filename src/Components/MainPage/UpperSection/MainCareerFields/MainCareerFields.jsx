@@ -7,7 +7,6 @@ import {PiCurrencyCircleDollarFill} from "react-icons/pi";
 import {MdSavedSearch} from "react-icons/md";
 import {RiTabletFill} from "react-icons/ri"
 import "./MainCareerFields.css"
-import { components } from 'react-select';
 import CareerImage from '../CarrerImages/CareerImage';
 
 const MainCareerFields  = () => {
