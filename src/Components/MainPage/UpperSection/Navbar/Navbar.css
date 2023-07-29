@@ -126,6 +126,28 @@
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
 }
+.profileContainer{
+  padding: 5px;
+  display: flex;
+  border: 2px solid limegreen;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  cursor:pointer;
+}
+.profileIcon{
+  border: 2px solid limegreen;
+  border-radius:50%;
+  font-size:220%;
+  /* padding: 5px */
+  color: limegreen;
+}
+.profileName{
+  font-size: 24px;
+  font-weight: 800;
+  padding-right: 3px;
+}
 @media (max-width:768px) {
   .logo{
     font-size: 25px;

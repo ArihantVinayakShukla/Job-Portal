@@ -11,6 +11,8 @@ const LeftLowerPart = ({jobTitle ,  companyName , jobType , jobLogo ,jobExperien
           <div className='joblogo'>
             <img src={jobLogo} alt="" />
           </div>
+          <div className='descWithBtn'>
+          <div className='descWithHeading'>
           <h1>{jobTitle}</h1>
          
           <div className='jobdescription'>
@@ -28,13 +30,15 @@ const LeftLowerPart = ({jobTitle ,  companyName , jobType , jobLogo ,jobExperien
               <div className='typejob'>
                 <BsClockHistory/>
                 <h3>{jobType}</h3>
-
               </div>
 
           
         </div>
-          <button>Apply</button>
-
+        </div>
+        <div className='jobBtnDiv'>
+          <button className='jobBtn'>Apply</button>
+</div>
+</div>
         
       </article>
     </>

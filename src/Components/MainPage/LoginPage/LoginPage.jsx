@@ -7,7 +7,7 @@ import {AiFillEye} from 'react-icons/ai';
 import axios from 'axios';
 
 
-const LoginPage = ({login , handleLogin}) => {
+const LoginPage = ({login , handleLogin, handleSuccessfulLogin}) => {
  
   console.log(login);
   const [password , setpassword] = useState(false);
@@ -39,6 +39,7 @@ const LoginPage = ({login , handleLogin}) => {
       if (res?.status === 200) {
         alert(res?.data?.msg);
         sessionStorage.setItem("email", res?.data?.data?.email);
+        handleSuccessfulLogin(res?.data?.data?.name);
       } else if (res?.status === 401) {
         alert(res?.data?.msg);
         } else {
@@ -76,6 +77,7 @@ const LoginPage = ({login , handleLogin}) => {
                       </div>
                     </div>
                     <input type='submit' value="submit" className="opacity submitBtn" />
+                    
                 </form>
                 <div className="register-forget opacity">
                     <p>New to Jobivist?</p>
