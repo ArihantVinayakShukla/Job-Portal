@@ -16,7 +16,7 @@ const ProfessionalDetails = ({ professionClick }) => {
   function onsubmithandler(event) {
     event.preventDefault();
     navigate("/Register/educationdetailsform");
-    let payloadNew = JSON.parse(sessionStorage.getItem("basicPayload"));
+    let payloadNew = JSON.parse(sessionStorage.getItem("payload"));
     payloadNew = { ...payloadNew, ...professionPayload };
     console.log("payloadNew: ", payloadNew);
     sessionStorage.setItem("professionPayload", JSON.stringify(payloadNew));

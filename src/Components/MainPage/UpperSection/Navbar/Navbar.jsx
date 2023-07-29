@@ -16,9 +16,10 @@ const Navbar = () => {
 
   const [login , setlogin] = useState(false);
 
-  const handlelogin = () => {
+  const handleLogin = () => {
     setlogin(!login)
   }
+  
 
   return (
     <>
@@ -28,7 +29,7 @@ const Navbar = () => {
       <button className='loginRegisterBtn' onClick={handleloginreg}>Login/Register</button>
       {
         loginreg && <div className='btns'>
-                      <div tabindex="0" class="button-86" onClick={handlelogin}>
+                      <div tabindex="0" class="button-86" onClick={handleLogin}>
   <p class="button-86Text" >Login</p>
 </div>
                         <Link to="/register" className='button-86' element={<RegistrationPage/>}><p className='button-86Text'>Register</p></Link>
@@ -37,7 +38,7 @@ const Navbar = () => {
       </div>
     </section>
     {
-      login && <LoginPage login={login} handlelogin={handlelogin}/> 
+      login && <LoginPage login={login} handleLogin={handleLogin}/> 
     }
     </>
   )
