@@ -1,5 +1,5 @@
 .Lowerpart{
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,12 +9,54 @@
 .lwrprt{
     width: 100%;
     display: flex;
-    flex-direction: column;
 }
 
-.lwrprt h1{
-    /* text-transform: uppercase; */
+.lwrprt h5{
     text-align: center;
     margin-top: 4%;
     font-size: 30px;
+    
 }
+
+
+.rlprt{
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .rlprt h5{
+     text-align: center;
+     margin-top: 5%;
+     margin-bottom: 2%;
+     font-size: 35px;
+     text-align: center;
+ }
+
+ @media  (max-width:1210px) {
+    .rlprt h5{
+        font-size: 32px;
+        margin-top: 10%;
+    }
+    .lwrprt{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .Lowerpart h5{
+        font-size: 40px;
+        margin-top: 10%;
+    }
+
+    
+ }
+
+ @media  (max-width:1108px) {
+    .rlprt h5{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+
+ }
