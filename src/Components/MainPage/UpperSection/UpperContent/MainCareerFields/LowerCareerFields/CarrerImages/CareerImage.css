@@ -35,6 +35,11 @@
 
 .careerImage:hover .textcontent{
     bottom: 0;
+}
 
-
+@media (max-width: 1300px) {
+    .careerImage{
+        width:19%;
+    }
+    
 }

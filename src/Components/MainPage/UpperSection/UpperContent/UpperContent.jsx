@@ -2,7 +2,7 @@ import React from "react";
 import './UpperContent.css';
 import SearchBar from './Search/Search.jsx';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-
+import MainCareerFields from './MainCareerFields/MainCareerFields.jsx'
 const UpperContent = () => {
 
     const [text] = useTypewriter({
@@ -28,8 +28,7 @@ const UpperContent = () => {
       <h1 className="hiredHeading">Get Hired As</h1>
       <span className="typingText">{text}<Cursor className="cursor"/></span>
       <SearchBar/>
-      <div>
-      </div>
+    <MainCareerFields/>
     </div>
   );
 };

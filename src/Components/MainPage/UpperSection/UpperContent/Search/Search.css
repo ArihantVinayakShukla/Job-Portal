@@ -69,7 +69,8 @@
     .search-con{
         flex-direction: column;
         row-gap:9px;
-
+        padding: 10px;
+            height:max-content
     }
     .btnLessDiv{
         flex-direction: column;

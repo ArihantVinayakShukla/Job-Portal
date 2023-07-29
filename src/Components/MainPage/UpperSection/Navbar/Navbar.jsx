@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import RegistrationPage from '../../../RegistrationPage/RegistrationPage';
 import { Link } from 'react-router-dom';
-import LoginPage from '../../../LoginPage/LoginPage';
+import LoginPage from '../../LoginPage/LoginPage';
 
 
 

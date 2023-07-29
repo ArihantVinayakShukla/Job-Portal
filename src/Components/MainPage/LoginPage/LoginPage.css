@@ -140,3 +140,37 @@
     right: 10px;
     cursor: pointer;
 }
+@media (max-width: 1200px)
+{
+    .containerr{
+        width: 50%;
+    }
+}
+@media (max-width: 965px)
+{
+    .containerr{
+        width: 60%;
+    }
+}
+@media (max-width: 800px)
+{
+    .containerr{
+        width: 70%;
+    }
+}
+@media (max-width: 700px)
+{
+    .containerr{
+        width: 100%;
+    }
+}
+@media (max-width: 500px)
+{
+    .circle{
+        width:85px;
+        height: 85px;
+    }
+    .lgn-container{
+        width:70%;
+    }
+}
