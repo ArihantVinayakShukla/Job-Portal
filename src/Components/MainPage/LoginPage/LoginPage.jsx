@@ -10,8 +10,6 @@ import axios from 'axios';
 const LoginPage = ({login , handleLogin}) => {
  
   console.log(login);
-
-
   const [password , setpassword] = useState(false);
   const [payload, updatePayload] = useState({
     email: "",
@@ -55,6 +53,7 @@ const LoginPage = ({login , handleLogin}) => {
         }
       });
       console.log('payload: ', payload);
+      handleLogin();
   };
   return (
     <>
@@ -66,7 +65,7 @@ const LoginPage = ({login , handleLogin}) => {
             <div className="circle circle-one"></div>
             <div className="form-container">
                 <h1 className="opacity">LOGIN</h1>
-                <form onSubmit={loginSubmitHandler}>
+                <form onSubmit={loginSubmitHandler} >
                     <input type="email" id="email" placeholder="EMAIL" onChange={onChangeHandler} autoComplete='off' required/>
                     <div className='pass'>
                       <input id="password" type={password ? "text":"password"} onChange={onChangeHandler} autoComplete = "off" placeholder="PASSWORD" required />
@@ -76,7 +75,7 @@ const LoginPage = ({login , handleLogin}) => {
                           }
                       </div>
                     </div>
-                    <input type='submit' value="submit" className="opacity submitBtn"/>
+                    <input type='submit' value="submit" className="opacity submitBtn" />
                 </form>
                 <div className="register-forget opacity">
                     <p>New to Jobivist?</p>
