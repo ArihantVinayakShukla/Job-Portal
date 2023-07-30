@@ -1,0 +1,30 @@
+.web{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 4% 10%;
+    padding: 2%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+
+}
+
+.ser{
+    margin: 2% 0% 4% 10%;
+    padding: 2% 4%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.web h6{
+    padding: 1% 5% 2% 5%;
+    font-size: 30px;
+}
+
+
+.ser h6{
+    padding: 0% 5% 2% 1%;
+    font-size: 50px;
+}

@@ -1,0 +1,50 @@
+.slidr{
+    border: 1px solid rgba(229, 210, 210, 0.835);
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 6%;
+    width: 95%;
+
+}
+
+.slidr img{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 243, 248);
+}
+
+.service-Image{
+    height: 150px;
+}
+
+.Service-description{
+    padding-left: 10px;
+    padding-top: 5%;
+}
+
+.Service-description p{
+    width: 80%;
+
+}
+
+.service-btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 1%;
+    font-size: 20px;
+    font-weight: 800;
+    color: #f59825;
+    padding-right: 20px;
+    cursor: pointer;
+    padding-bottom: 2%;
+}
+
+.service-btn button{
+    background-color: transparent;
+    border: none;
+    color: #f59825;
+    
+    
+}
