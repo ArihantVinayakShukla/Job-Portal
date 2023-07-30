@@ -3,6 +3,7 @@ import "./RegistrationPage.css";
 import SideNumberBar from "./SideNumberBar/SideNumberBar.jsx";
 import RegistrationForms from "./RegistrationForms/RegistrationForms.jsx";
 import Loader from './Loader.jsx';
+import Navbar2 from "./Navbar2";
 
 
 const RegistrationPage = () => {
@@ -36,8 +37,9 @@ const RegistrationPage = () => {
       loader ? <Loader/>
       : 
       <>
-      
+                <Navbar2/>
         <article className="registrationArticle">
+
         <SideNumberBar
           click={click}
           professionClick={professionClick}
