@@ -20,14 +20,13 @@
   font-weight: 400;
   color: rgb(218, 216, 216);
   cursor: pointer;
-  margin-left: 5.5%;
 }
 
 .line {
   height: 40px;
   background: rgb(218, 216, 216);
   width: 4px;
-  margin-left: 12%;
+  margin-left: 11%;
 }
 .abc {
   display: flex;
@@ -46,13 +45,12 @@
   font-size: 180%;
   font-weight: 400;
   cursor: pointer;
-  margin-left: 5.5%;
 }
 .activeLine {
   background: limegreen;
   height: 40px;
   width: 4px;
-  margin-left: 12%;
+  margin-left: 11%;
 }
 
 .sideText {
@@ -76,7 +74,6 @@
   font-weight: 400;
   cursor: pointer;
   background-color: limegreen;
-  margin-left: 5.5%;
 }
 
 @media (max-width: 768px) {

@@ -3,47 +3,51 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer class="bg-white dark:bg-gray-900 w-full">
-      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0 text-center lg:text-start">
-              <h1 className="fnt text-white">JobiVist</h1>
+    <footer class="footr">
+      <div class="footer2">
+        <div class="footer3">
+          <div class="footer4">
+              <h1 className="fnt">JobiVist</h1>
             
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+
+
+          <div class="footer5">
+
+            <div className="fff">
+              <h2 class="footer6">
                 About
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="https://flowbite.com/" class="hover:underline">
+              <ul class="footer7">
+                <li >
+                  <a href="#" >
                     JobiVist
                   </a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" class="hover:underline">
+                  <a href="#">
                     Tailwind CSS
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            
+            <div className="fff">
+              <h2 class="footer6">
               DOWNLOAD
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
+              <ul class="footer7">
+                <li class="">
                   <a
-                    href="https://github.com/themesberg/flowbite"
-                    class="hover:underline "
+                    href="#"
+                   
                   >
                     Windows
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href="#"
                     class="hover:underline"
                   >
                     Android
@@ -51,35 +55,45 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Legal
+
+            <div className="fff">
+              <h2 class="footer6">
+              LEGAL
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">
-                    Privacy Policy
+              <ul class="footer7">
+                <li class="">
+                  <a
+                    href="#"
+                   
+                  >
+                    Terms & Conditions
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">
-                    Terms &amp; Conditions
+                  <a
+                    href="#"
+                    class="hover:underline"
+                  >
+                    Privacy Policy
                   </a>
                 </li>
               </ul>
             </div>
+            
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
+        <hr class="horizontal-line" />
 
-        <div className="flex flex-col space-y-8 justify-between flex-wrap lg:flex-row lg:space-y-0">
-          <div className="text-white text-center lg:text-start">
+
+
+        <div className="footer-social">
+          <div className="footer-social1">
             <p className="fnt2">
               © 2023 <span className="fnt1">JobiVist™</span>
             </p>
           </div>
           <div>
-            <ul class="social gap-y-8 ">
+            <ul class="social">
               <li class="social-item">
                 <a class="social-link" href="/">
                   <svg
