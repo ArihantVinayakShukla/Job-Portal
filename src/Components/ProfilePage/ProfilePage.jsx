@@ -55,7 +55,7 @@ const ProfilePage = () => {
 
   // Function to handle the update button click
   const handleUpdateClick = (event) => {
-    event.preventDefault();
+  event.preventDefault();
     // Send updated user data to the backend
     axios
       .put(`${window.API_URL}/updateProfile`, editedUser) // Assuming the endpoint for updating user data is '/updateProfile'
