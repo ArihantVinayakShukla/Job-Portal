@@ -37,7 +37,6 @@
     font-weight: 800;
     color: #f59825;
     padding-right: 20px;
-    cursor: pointer;
     padding-bottom: 2%;
 }
 
@@ -45,6 +44,6 @@
     background-color: transparent;
     border: none;
     color: #f59825;
-    
+    cursor: pointer;
     
 }
