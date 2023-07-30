@@ -135,6 +135,7 @@
   align-items: center;
   gap:20px;
   cursor:pointer;
+  text-decoration: none;
 }
 .profileIcon{
   border: 2px solid limegreen;
@@ -144,6 +145,7 @@
   color: limegreen;
 }
 .profileName{
+  color:black;
   font-size: 24px;
   font-weight: 800;
   padding-right: 3px;

@@ -54,7 +54,6 @@ const LoginPage = ({login , handleLogin, handleSuccessfulLogin}) => {
         }
       });
       console.log('payload: ', payload);
-      handleLogin();
   };
   return (
     <>

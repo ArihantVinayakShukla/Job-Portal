@@ -33,10 +33,10 @@ const Navbar = () => {
     <section className="NavSection  ">
       <h3 className='logo'>JOBIVIST</h3>
       {authenticatedUser ? ( // Display profile icon and user's email if authenticated
-            <div className='profileContainer'>
+            <Link to="/Profile"><div className='profileContainer'>
               <FaUser className='profileIcon' />
               <p className='profileName'>{authenticatedUser}</p>
-            </div>):
+            </div></Link>):
       (<div className="btnLoginReg"> 
       <button className='loginRegisterBtn' onClick={handleloginreg}>Login/Register</button>
       {

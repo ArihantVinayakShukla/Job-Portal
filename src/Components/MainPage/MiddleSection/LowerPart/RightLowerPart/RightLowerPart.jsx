@@ -1,5 +1,4 @@
 import React from 'react';
-import {GrLocation} from "react-icons/gr";
 import "./RightLowerPart.css";
 import rlp from "./rlprtimg.png";
 
