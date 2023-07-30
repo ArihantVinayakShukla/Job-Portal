@@ -9,7 +9,7 @@ const Services = () => {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 1,
+          items: 3,
           slidesToSlide: 1, // optional, default to 1.
         },
         tablet: {
@@ -27,7 +27,7 @@ const Services = () => {
     const jobPortalServices = [
         {
           serviceName: "Premium Membership",
-          description: "How to attend an interview confidently? Is there a sceret?",
+          description: "How to attend an interview confidently? Is there a secret?",
           image: "https://d2zxo3dbbqu73w.cloudfront.net/fwasset-live/8e24d8e9/images/home-page/premium_img.svg"
         },
         {
@@ -37,22 +37,22 @@ const Services = () => {
         },
         {
           serviceName: "Interview Grooming",
-          description: "How to attend an interview confidently? Is there a sceret?",
+          description: "How to attend an interview confidently? Is there a secret?",
           image: "https://d2zxo3dbbqu73w.cloudfront.net/fwasset-live/8e24d8e9/images/home-page/interview_groming_icon.svg"
         },
         {
           serviceName: "Interview Grooming",
-          description: "How to attend an interview confidently? Is there a sceret?",
+          description: "How to attend an interview confidently? Is there a secret?",
           image: "https://d2zxo3dbbqu73w.cloudfront.net/fwasset-live/8e24d8e9/images/home-page/interview_groming_icon.svg"
         },
         {
           serviceName: "Interview Grooming",
-          description: "How to attend an interview confidently? Is there a sceret?",
+          description: "How to attend an interview confidently? Is there a secret?",
           image: "https://d2zxo3dbbqu73w.cloudfront.net/fwasset-live/8e24d8e9/images/home-page/interview_groming_icon.svg"
         },
         {
           serviceName: "Interview Grooming",
-          description: "How to attend an interview confidently? Is there a sceret?",
+          description: "How to attend an interview confidently? Is there a secret?",
           image: "https://d2zxo3dbbqu73w.cloudfront.net/fwasset-live/8e24d8e9/images/home-page/interview_groming_icon.svg"
         },
       ];
