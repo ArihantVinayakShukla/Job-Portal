@@ -33,7 +33,7 @@ const Navbar = () => {
     <section className="NavSection  ">
       <h3 className='logo'>JOBIVIST</h3>
       {authenticatedUser ? ( // Display profile icon and user's email if authenticated
-            <Link to="/Profile"><div className='profileContainer'>
+            <Link to="/Profile" className='ProfileLink'><div className='profileContainer'>
               <FaUser className='profileIcon' />
               <p className='profileName'>{authenticatedUser}</p>
             </div></Link>):

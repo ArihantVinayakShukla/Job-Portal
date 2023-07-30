@@ -1,96 +1,107 @@
-.profile-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-  }
+.profilePageContainer{
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #dde1e7;
+
+}
+.profilePageContainer h1{
+  color: #343434;
+  margin-top: 2.5%;
+}
+.content {
+  width: 400px;
+  height: max-content;
+  padding: 40px 30px;
+  background: #dde1e7;
+  border-radius: 10px;
   
-  .profile-details {
-    margin-bottom: 20px;
-  }
-  
-  .profile-details p {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .profile-details input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .profile-details input[type="number"] {
-    width: 70px;
-  }
-  
-  .profile-actions {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .edit-button, .update-button, .cancel-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .edit-button:hover, .update-button:hover, .cancel-button:hover {
-    background-color: #1c87c9;
-  }
-  
-  .profile-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .profile-info {
+  box-shadow: -3px -3px 7px #ffffff73,
+  2px 2px 5px rgba(94,104,121,0.288);
+}
+.content:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+form section{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.content .text {
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #595959;
+}
+.personIcon{
+  margin: 8px 8px;
+  font-size:200%;
+  color: #595959;
+}
+.field {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .profile-info-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .profile-info-item label {
-    min-width: 150px;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .profile-info-item input {
-    border: none;
-    background-color: transparent;
-    font-size: 16px;
-    color: #333;
-    flex: 1;
-  }
-  
-  .profile-actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-  
+  height: 50px;
+  width: 100%;
+}
+
+.field .input {
+  height: 100%;
+  width: 100%;
+  padding-left: 60px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #dde1e7;
+  color: #595959;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #BABECC,
+              inset -5px -5px 10px #ffffff73;
+}
+
+
+.field .input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC,
+              inset -1px -1px 2px #ffffff73;
+}
+
+.field .span {
+  position: absolute;
+  color: #595959;
+  width: 50px;
+  line-height: 55px;
+}
+
+
+
+.button {
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 600;
+  background: #dde1e7;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #595959;
+  box-shadow: 2px 2px 5px #BABECC,
+             -5px -5px 10px #ffffff73;
+}
+
+.button:focus {
+  color: #3498db;
+  box-shadow: inset 2px 2px 5px #BABECC,
+             inset -5px -5px 10px #ffffff73;
+}
+.cancelBtn:hover{
+background-color: rgb(254, 90, 90);
+}
+.updateBtn:hover{
+background-color: rgb(86, 246, 86);
+}

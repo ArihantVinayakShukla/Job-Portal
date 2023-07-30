@@ -3,6 +3,9 @@
     justify-content: space-between;
     padding: 2.5% 5%;
 }
+.button-86{
+  text-decoration: dashed;
+}
 @font-face {
     font-family: "Hunt";
     src: url("./disoluta-ffp/Disoluta-font-FFP.ttf");
@@ -35,7 +38,7 @@
 
 .btns{
     position: absolute;
-    top: 100%;
+    top: 105%;
     display: flex;
     width: 100%;
     justify-content:space-around;
@@ -149,6 +152,10 @@
   font-size: 24px;
   font-weight: 800;
   padding-right: 3px;
+  text-decoration: none;
+}
+.ProfileLink{
+  text-decoration: none;
 }
 @media (max-width:768px) {
   .logo{

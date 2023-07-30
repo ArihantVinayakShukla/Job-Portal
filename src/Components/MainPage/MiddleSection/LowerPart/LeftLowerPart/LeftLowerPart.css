@@ -133,6 +133,12 @@
 
 @media (550px <= width <=800px){
     .leftlower{
-        width: 70%;
+        width: 80%;
     }
+}
+@media(max-width:500px){
+    .leftlower{
+        width: 100%;
+    }
+
 }
