@@ -27,7 +27,7 @@
   height: 40px;
   background: rgb(218, 216, 216);
   width: 4px;
-  margin-left: 11%;
+  margin-left: 12%;
 }
 .abc {
   display: flex;
@@ -52,7 +52,7 @@
   background: limegreen;
   height: 40px;
   width: 4px;
-  margin-left: 11%;
+  margin-left: 12%;
 }
 
 .sideText {
@@ -89,10 +89,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+ 
   }
   .container{
     flex-direction: row;
-    gap: 2%;
+    gap: 3%;
+    justify-content: center;
   }
   .line, .activeLine{
     display: none;

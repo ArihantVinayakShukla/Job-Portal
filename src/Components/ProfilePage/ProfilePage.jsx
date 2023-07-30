@@ -89,7 +89,7 @@ const ProfilePage = () => {
       {isEditable ? <div className="text">Edit Your Profile!</div> : <div></div>}
       <form action="#">
         
-        <section>
+        <section className="profileSection">
         <div className="field">
           
             {isEditable ? (

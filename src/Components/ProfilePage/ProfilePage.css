@@ -25,7 +25,7 @@
 .content:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-form section{
+form .sectionProfile{
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -105,3 +105,5 @@ background-color: rgb(254, 90, 90);
 .updateBtn:hover{
 background-color: rgb(86, 246, 86);
 }
+
+
