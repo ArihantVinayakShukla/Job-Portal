@@ -20,6 +20,7 @@
   font-weight: 400;
   color: rgb(218, 216, 216);
   cursor: pointer;
+  margin-left: 5.5%;
 }
 
 .line {
@@ -45,6 +46,7 @@
   font-size: 180%;
   font-weight: 400;
   cursor: pointer;
+  margin-left: 5.5%;
 }
 .activeLine {
   background: limegreen;
@@ -74,6 +76,7 @@
   font-weight: 400;
   cursor: pointer;
   background-color: limegreen;
+  margin-left: 5.5%;
 }
 
 @media (max-width: 768px) {
