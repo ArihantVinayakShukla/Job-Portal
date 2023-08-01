@@ -1,11 +1,12 @@
 .leftlower{
     width: 65%;
-    border: 1px solid  rgb(142,110,255);
+    border: 1px solid  limegreen;
     position: relative;
-    color: white;
-    background: linear-gradient(to right,rgb(121, 84, 255),rgb(142, 110, 255));
+    color: black;
+     background: linear-gradient(to top, rgb(6, 251, 182), #fff); 
     border-bottom-right-radius: 20px;
 }
+
 
 .descWithBtn{
     display: flex;
@@ -18,7 +19,7 @@
     width: 15%;
     height: 40%;
     left: -8%;
-    border: 1px solid  rgb(142,110,255);
+    border: 1px solid  limegreen;
     top: 32%;
 }
 
@@ -30,8 +31,8 @@
     gap: 10px;
     width:100%;
 }
-.leftlower h1{
-    font-size: 20px;
+.leftlower h2{
+    color: black;
 }
 .joblogo img{
     object-fit:cover;
@@ -65,14 +66,18 @@
 
 .jobBtn{
     padding: 10px 30px;
-    background-color: #7b57ff;
-    border: 1px solid #2e02cc;
-    color: white;
+    background-color: #fff;
+    border: 2px solid rgb(112, 226, 236);
     border-radius: 20px;
+    color:rgb(112, 226, 236);
     font-size: 18px;
     letter-spacing: 2px;
     cursor: pointer;
     margin-top: 50px
+}
+.jobBtn:hover{
+    color: white;
+    background-color: rgb(3, 230, 166);
 }
 
 @media (max-width:1210px){

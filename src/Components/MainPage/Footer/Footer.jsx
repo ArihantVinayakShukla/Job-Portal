@@ -7,49 +7,30 @@ const Footer = () => {
       <div class="footer2">
         <div class="footer3">
           <div class="footer4">
-              <h1 className="fnt">JobiVist</h1>
-            
+            <h1 className="fnt">JobiVist</h1>
           </div>
 
-
           <div class="footer5">
-
             <div className="fff">
-              <h2 class="footer6">
-                About
-              </h2>
+              <h2 class="footer6">About</h2>
               <ul class="footer7">
-                <li >
-                  <a href="#" >
-                    JobiVist
-                  </a>
+                <li>
+                  <a href="#">JobiVist</a>
                 </li>
                 <li>
-                  <a href="#">
-                    Tailwind CSS
-                  </a>
+                  <a href="#">Tailwind CSS</a>
                 </li>
               </ul>
             </div>
-            
+
             <div className="fff">
-              <h2 class="footer6">
-              DOWNLOAD
-              </h2>
+              <h2 class="footer6">DOWNLOAD</h2>
               <ul class="footer7">
                 <li class="">
-                  <a
-                    href="#"
-                   
-                  >
-                    Windows
-                  </a>
+                  <a href="#">Windows</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="hover:underline"
-                  >
+                  <a href="#" class="hover:underline">
                     Android
                   </a>
                 </li>
@@ -57,34 +38,21 @@ const Footer = () => {
             </div>
 
             <div className="fff">
-              <h2 class="footer6">
-              LEGAL
-              </h2>
+              <h2 class="footer6">LEGAL</h2>
               <ul class="footer7">
                 <li class="">
-                  <a
-                    href="#"
-                   
-                  >
-                    Terms & Conditions
-                  </a>
+                  <a href="#">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    class="hover:underline"
-                  >
+                  <a href="#" class="hover:underline">
                     Privacy Policy
                   </a>
                 </li>
               </ul>
             </div>
-            
           </div>
         </div>
         <hr class="horizontal-line" />
-
-
 
         <div className="footer-social">
           <div className="footer-social1">
