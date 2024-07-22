@@ -27,7 +27,6 @@ const RegistrationForms = ({ onClick, professionClick, eduClick }) => {
   ]);
   return (
     <article className="form-article">
-      {/* Render the nested routes */}
       {routeElements}
     </article>
   );

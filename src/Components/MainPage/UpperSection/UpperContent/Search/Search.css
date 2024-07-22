@@ -1,46 +1,31 @@
-.search-con{
+.search-con {
+    max-width: 900px;
     margin: 50px auto;
-    width: 80%;
+    width: 70%;
     display: flex;
     height: 50px;
     border-radius: 10px;
     letter-spacing: 2px;
-}
-
-.btnLessDiv{
+  }
+  
+  .btnLessDiv {
     display: flex;
     width: 100%;
     padding: 0;
-}
-.selectDiv{
-    display:flex;
-    width: 60%;
-}
-.search{
-    height: 50px;
+  }
+  
+  .selectDiv {
     display: flex;
-    align-items: center;
-    width: 40%;
-    border: 1px solid lightgray;
-    background-color: #fff;
-    border-radius: 4px;
-
-}
-
-.search input{
-    border: none;
-    height: 100%;
+    width: 50%;
+  }
+  
+  .search {
+    display: flex;
     width: 100%;
-    padding: 0 15px;
-    font-size: 15px;
-}
-
-.search input:focus{
-    outline: none;
-}
-
-.sea-btn{
-    width: 10%;
+  }
+  
+  .sea-btn {
+    width: 20%;
     height: 50px;
     background-color: limegreen;
     border-top-right-radius: 10%;
@@ -49,47 +34,50 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.sea-btn input{
+  }
+  
+  .sea-btn .goBtn {
     background: transparent;
     border: none;
     color: white;
     font-size: 20px;
     cursor: pointer;
-
-}
-
-#location{
-    width:50%;
-}
-#experience{
-    width: 50%;
-}
-@media(max-width:768px){
-    .search-con{
-        flex-direction: column;
-        row-gap:9px;
-        padding: 10px;
-            height:max-content
+  }
+  
+  #job{
+    width:100%;
+  }
+  #location {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .search-con {
+      flex-direction: column;
+      row-gap: 9px;
+      padding: 10px;
+      height: max-content;
     }
-    .btnLessDiv{
-        flex-direction: column;
-        row-gap:9px;
+    .btnLessDiv {
+      flex-direction: column;
+      row-gap: 9px;
     }
-    .selectDiv{
-        flex-direction: column;
-        width: 100%;
-        row-gap:9px;
+    .selectDiv {
+      flex-direction: column;
+      width: 100%;
+      row-gap: 9px;
     }
-    #location,#experience,.search{
-width: 100%;
+    #location,
+    #experience,
+    .search {
+      width: 100%;
     }
-    .sea-btn{
-        width: 100%;
-        border-radius: 0px;
+    .sea-btn {
+      width: 100%;
+      border-radius: 0px;
     }
-    .goBtn{
-        height: 49.9px;
-        border-radius: 0px;
+    .goBtn {
+      height: 49.9px;
+      border-radius: 0px;
     }
-}
+  }

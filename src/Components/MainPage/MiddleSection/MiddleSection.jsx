@@ -1,25 +1,18 @@
-import React from 'react';
-import UpperPart from './UpperPart/UpperPart.jsx'
-import LowerPart from './LowerPart/LowerPart.jsx';
-import Services from './Services/Services.jsx';
-import Webinar from './Webinar/Webinar.jsx';
+import React from "react";
+import UpperPart from "./UpperPart/UpperPart.jsx";
+import LowerPart from "./LowerPart/LowerPart.jsx";
 
-import "./MiddleSection.css"
-const MiddleSection = () => {
+import "./MiddleSection.css";
+const MiddleSection = ({selectedJobs, authenticatedUser, setlogin, loginRef}) => {
   return (
     <>
-      <div><UpperPart/><LowerPart/> </div>
-      <div className='ser'>
-        <h6>Services</h6>
-        <Services/>
-      </div>
-      <div className='web'>
-        <h6>Successful Webinar</h6>
-        <Webinar />
+      <div>
+        <UpperPart />
+        <LowerPart selectedJobs={selectedJobs} authenticatedUser={authenticatedUser}
+              setlogin={setlogin} loginRef={loginRef}/>
       </div>
     </>
-   
-  )
-}
+  );
+};
 
 export default MiddleSection;

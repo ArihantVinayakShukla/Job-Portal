@@ -15,10 +15,10 @@ const Footer = () => {
               <h2 class="footer6">About</h2>
               <ul class="footer7">
                 <li>
-                  <a href="#">JobiVist</a>
+                  <a href="#id">JobiVist</a>
                 </li>
                 <li>
-                  <a href="#">Tailwind CSS</a>
+                  <a href="#id">Tailwind CSS</a>
                 </li>
               </ul>
             </div>
@@ -27,10 +27,10 @@ const Footer = () => {
               <h2 class="footer6">DOWNLOAD</h2>
               <ul class="footer7">
                 <li class="">
-                  <a href="#">Windows</a>
+                  <a href="#id">Windows</a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">
+                  <a href="#id" class="hover:underline">
                     Android
                   </a>
                 </li>
@@ -41,10 +41,10 @@ const Footer = () => {
               <h2 class="footer6">LEGAL</h2>
               <ul class="footer7">
                 <li class="">
-                  <a href="#">Terms & Conditions</a>
+                  <a href="#id">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">
+                  <a href="#id" class="hover:underline">
                     Privacy Policy
                   </a>
                 </li>
@@ -89,7 +89,7 @@ const Footer = () => {
                   >
                     <path
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
                       fill="currentColor"
                     ></path>
@@ -123,7 +123,7 @@ const Footer = () => {
                   >
                     <path
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
                       fill="currentColor"
                     ></path>
@@ -133,7 +133,7 @@ const Footer = () => {
                     ></path>
                     <path
                       fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                       d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
                       fill="currentColor"
                     ></path>

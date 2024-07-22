@@ -18,8 +18,8 @@ const UpperCareerField = () => {
             <CareerFields icon={<GiBlackHandShield/>} para="BackEnd Developer"/>
       </div>
       <div className='innerMainCF'>
-            <CareerFields icon={<PiCurrencyCircleDollarFill/>} para="Dev Ops"/>
-            <CareerFields icon={<MdSavedSearch/>} para="Emerging Technologies "/>
+            <CareerFields icon={<PiCurrencyCircleDollarFill/>} para="Web 3"/>
+            <CareerFields icon={<MdSavedSearch/>} para="Dev Ops"/>
             <CareerFields icon={<RiTabletFill/>} para="Data Science Jobs"/>
             </div>
         </div>

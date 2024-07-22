@@ -6,8 +6,7 @@ import { AiFillMail } from "react-icons/ai";
 import { FaTransgender } from "react-icons/fa";
 import { ImBriefcase } from "react-icons/im";
 import { FaUniversity, FaGraduationCap } from "react-icons/fa";
-import { AiTwotoneCalendar } from "react-icons/ai"
-
+import { AiTwotoneCalendar } from "react-icons/ai";
 
 const ProfilePage = () => {
   const [user, setUser] = useState(null);
@@ -16,7 +15,6 @@ const ProfilePage = () => {
   const userEmail = sessionStorage.getItem("email");
 
   useEffect(() => {
-    // Fetch user details based on the user's email
     const fetchUserProfile = async () => {
       try {
         const response = await axios.get(`${window.API_URL}/profile`, {
@@ -55,7 +53,7 @@ const ProfilePage = () => {
 
   // Function to handle the update button click
   const handleUpdateClick = (event) => {
-  event.preventDefault();
+    event.preventDefault();
     // Send updated user data to the backend
     axios
       .put(`${window.API_URL}/updateProfile`, editedUser) // Assuming the endpoint for updating user data is '/updateProfile'
@@ -78,172 +76,76 @@ const ProfilePage = () => {
     setEditedUser(null);
   };
 
-  if (!user) {  
+  if (!user) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className="profilePageContainer">
-        <h1>{user.name}'s Profile CARD</h1>
-    <div className="content">
-      {isEditable ? <div className="text">Edit Your Profile!</div> : <div></div>}
-      <form action="#">
-        
-        <section className="profileSection">
-        <div className="field">
-          
-            {isEditable ? (
-              <>
-                <span className="span">
-                  <BsFillPersonFill className="personIcon" />
-                </span>
-                <input
-                  type="text"
-                  className="input"
-                  placeholder="Name"
-                  name="name"
-                  value={editedUser.name}
-                  onChange={handleFieldChange}
-                />
-              </>
-            ) : (
-                <><span className="span">
-                <BsFillPersonFill className="personIcon" />
-              </span>
+    <div className="profile-container">
+      <div className="profile-header">
+        <div className="profile-avatar">
+          {user.name.charAt(0)}
+        </div>
+        <h1>{user.name}'s Profile</h1>
+      </div>
+      <div className="profile-content">
+        <div className="profile-info">
+          {[
+            { icon: <BsFillPersonFill />, name: "name", label: "Name" },
+            { icon: <AiFillMail />, name: "email", label: "Email" },
+            { icon: <FaTransgender />, name: "gender", label: "Gender" },
+            { icon: <ImBriefcase />, name: "profession", label: "Profession" },
+            { icon: <FaGraduationCap />, name: "degree", label: "Degree" },
+            { icon: <FaUniversity />, name: "university", label: "University" },
+            { icon: <AiTwotoneCalendar />, name: "graduation", label: "Graduation Year" },
+          ].map((field) => (
+            <div key={field.name} className="info-group">
+              <label>
+                {field.icon}
+                <span>{field.label}</span>
+              </label>
               <input
                 type="text"
-                className="input"
-                placeholder="Name"
-                name="name"
-                value={user.name}
+                name={field.name}
+                value={isEditable ? editedUser[field.name] : user[field.name]}
+                onChange={handleFieldChange}
+                readOnly={!isEditable || field.name === "email"}
               />
-              </>
-            )}
-          
+            </div>
+          ))}
         </div>
-        <div className="field">
-            {isEditable? (<>
-        <span className="span">
-                <AiFillMail className="personIcon" />
-              </span>
-          <input required type="email" placeholder="E-mail" className="input" value={user.email} />
-          </> ): (<>
-        <span className="span">
-                <AiFillMail className="personIcon" />
-              </span>
-          <input required type="email" placeholder="E-mail" className="input" value={user.email} />
-          </> )}
-        </div>
-        <div className="field">
-          
-            {isEditable ? (
-              <><span className="span">
-                <FaTransgender className="personIcon" />
-              </span>
-                <input
-                  type="text"
-                  name="gender"
-                  className="input"
-                  value={editedUser.gender}
-                  placeholder="Gender"
-                  onChange={handleFieldChange}
-                />
-              </>
-            ) : (
-                <><span className="span">
-                <FaTransgender className="personIcon" />
-              </span>
-              <input type="text" name="gender" placeholder="Gender" className="input" value={user.gender} />
-              </>
-            )}
-          
-        </div>
-        <div className="field">
-        {isEditable ? (
+        <div className="profile-actions">
+          {isEditable ? (
             <>
-            <span className="span">
-                <ImBriefcase className="personIcon" />
-              </span>
-          <input type="text" className="input" placeholder="Experience" name="profession" value={editedUser.profession} onChange={handleFieldChange} />
-          </>
-        ) : (
-            <>
-            <span className="span">
-                <ImBriefcase className="personIcon" />
-              </span>
-          <input type="text" className="input" placeholder="Experience" name="profession" value={user.profession} onChange={handleFieldChange} />
-          </>
-        )}
-        </div>
-        <div className="field">
-            {isEditable ? (
-                <>
-                <span className="span">
-                <FaGraduationCap className="personIcon" />
-              </span>
-          <input type="text" className="input" placeholder="Highest Education" name="degree" value={editedUser.degree} onChange={handleFieldChange} />
-          </>
-        ) : (
-            <>
-            <span className="span">
-            <FaGraduationCap className="personIcon" />
-          </span>
-      <input type="text" className="input" name="degree" placeholder="Highest Education" value={user.degree} onChange={handleFieldChange} />
-      </>
-        )}
-    </div>
-    <div className="field">
-    {isEditable ? (
-        <>
-        <span className="span">
-            <FaUniversity className="personIcon" />
-          </span>
-          <input type="text" className="input" name="university" placeholder="University" value={editedUser.university} onChange={handleFieldChange} />
-          </>
-        ) : (
-            <>
-            <span className="span">
-                <FaUniversity className="personIcon" />
-              </span>
-              <input type="text" className="input" name="university" placeholder="University" value={user.university} onChange={handleFieldChange} />
-              </>
-        )}
-        </div>
-        <div className="field">
-        {isEditable ? (
-            <>
-            <span className="span">
-                <AiTwotoneCalendar className="personIcon" />
-              </span>
-            <input type="text" className="input" name="graduation" placeholder="year of Graduation" value={editedUser.graduation} onChange={handleFieldChange} />
+              <button className="cancel-button" onClick={handleCancelClick}>
+                Cancel
+              </button>
+              <button className="update-button" onClick={handleUpdateClick}>
+                Update
+              </button>
             </>
-        ) : (
-            <>
-            <span className="span">
-                <AiTwotoneCalendar className="personIcon" />
-              </span>
-            <input type="text" className="input" name="graduation" placeholder="year of Graduation" value={user.graduation} onChange={handleFieldChange} />
-            </>
-        )}
+          ) : (
+            <button className="edit-button" onClick={handleEditClick}>
+              Edit Profile
+            </button>
+          )}
         </div>
-
-        {isEditable ? (
-          <>
-            <button className="button cancelBtn" onClick={handleCancelClick}>
-              Cancel
-            </button>
-            <button className="button updateBtn" onClick={handleUpdateClick}>
-              Update
-            </button>
-          </>
+      </div>
+      <div className="applied-jobs">
+        <h2>Applied Jobs</h2>
+        {user.jobApplications && user.jobApplications.length > 0 ? (
+          <ul>
+            {user.jobApplications.map((job, index) => (
+              <li key={index}>
+                <div className="job-title">{job.jobTitle}</div>
+                <div className="job-company">{job.companyName}</div>
+              </li>
+            ))}
+          </ul>
         ) : (
-          <button className="button" onClick={handleEditClick}>
-            Edit
-          </button>
+          <p>You haven't applied to any jobs yet.</p>
         )}
-    </section>
-      </form>
-    </div>
+      </div>
     </div>
   );
 };

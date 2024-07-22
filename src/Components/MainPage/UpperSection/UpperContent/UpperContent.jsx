@@ -3,7 +3,7 @@ import './UpperContent.css';
 import SearchBar from './Search/Search.jsx';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import MainCareerFields from './MainCareerFields/MainCareerFields.jsx'
-const UpperContent = () => {
+const UpperContent = ({onFiltersChange}) => {
 
     const [text] = useTypewriter({
         words:[
@@ -27,8 +27,8 @@ const UpperContent = () => {
     <div className="upperContentContainer">
       <h1 className="hiredHeading">Get Hired As</h1>
       <span className="typingText">{text}<Cursor className="cursor"/></span>
-      <SearchBar/>
-    <MainCareerFields/>
+      <SearchBar onFiltersChange={onFiltersChange}/>
+    <MainCareerFields />
     </div>
   );
 };

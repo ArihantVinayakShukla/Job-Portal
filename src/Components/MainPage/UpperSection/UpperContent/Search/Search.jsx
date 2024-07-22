@@ -2,112 +2,67 @@ import React, { useState } from "react";
 import "./Search.css";
 import Select from "react-select";
 
-const Search = () => {
-  const [selectedOptions, setSelectedOptions] = useState();
+const Search = ({ onFiltersChange }) => {
+  const [selectedJobs, setSelectedJobs] = useState([]);
 
-  const [ExperienceOptions, setExperienceOptions] = useState();
-
-  const optionList = [
-    { value: "bangalore", label: "Bangalore" },
-    { value: "delhi", label: "Delhi" },
-    { value: "mumbai", label: "Mumbai" },
-    { value: "noida", label: "Noida" },
-    { value: "pune", label: "Pune" },
-    { value: "agra", label: "Agra" },
-    { value: "ghaziabad", label: "Ghaziabad" },
-    { value: "jaipur", label: "Jaipur" },
-    { value: "hyderabad", label: "Hyderabad" },
-    { value: "gurugram", label: "Gurugram" },
-    { value: "chennai", label: "Chennai" },
-    { value: "kolkata", label: "Kolkata" },
-    { value: "ahmedabad", label: "Ahmedabad" },
-    { value: "surat", label: "Surat" },
-    { value: "lucknow", label: "Lucknow" },
-    { value: "kanpur", label: "Kanpur" },
-    { value: "jaipur", label: "Jaipur" },
-    { value: "nagpur", label: "Nagpur" },
-    { value: "patna", label: "Patna" },
-    { value: "indore", label: "Indore" },
-    { value: "thiruvananthapuram", label: "Thiruvananthapuram" },
-    { value: "chandigarh", label: "Chandigarh" },
-    { value: "bhopal", label: "Bhopal" },
-    { value: "visakhapatnam", label: "Visakhapatnam" },
-    { value: "vadodara", label: "Vadodara" },
-    { value: "bhubaneswar", label: "Bhubaneswar" },
-    { value: "coimbatore", label: "Coimbatore" },
-    { value: "ludhiana", label: "Ludhiana" },
-    { value: "madurai", label: "Madurai" },
-    { value: "nashik", label: "Nashik" },
-    { value: "faridabad", label: "Faridabad" },
-    { value: "meerut", label: "Meerut" },
+  const jobList = [
+    { value: "frontend_react_developer", label: "Frontend React Developer" },
+    { value: "backend_developer", label: "Backend Developer" },
+    { value: "senior_frontend_developer", label: "Senior Frontend Developer" },
+    { value: "lead_frontend_developer", label: "Lead Frontend Developer" },
+    { value: "frontend_developer", label: "Frontend Developer" },
+    { value: "contract_lead_frontend_developer", label: "Contract Lead Frontend Developer" },
+    { value: "senior_business_development_manager", label: "Senior Business Development Manager (Employment Service)" },
+    { value: "senior_devops_engineer", label: "Senior DevOps Engineer" },
+    { value: "software_developer", label: "Software Developer" },
+    { value: "senior_express_react_developer", label: "Senior Express/React Developer" },
+    { value: "senior_full_stack_php_developer", label: "Senior Full Stack PHP Developer - Remote Working" },
+    { value: "senior_full_stack_developer", label: "Senior Full Stack Developer" },
+    { value: "frontend_architect", label: "Frontend Architect" },
+    { value: "junior_software_developer", label: "Junior Software Developer" },
+    { value: "lead_software_developer", label: "Lead Software Developer" },
+    { value: "backend_engineer", label: "Backend Engineer" }
   ];
-
-  const experienceList = [
-    { value: "0-3", label: "0-3 years" },
-    { value: "3-5", label: "3-5 years" },
-    { value: "5-7", label: "5-7 years" },
-    { value: "7-10", label: "7-10 years" },
-    { value: "10-15", label: "10-15 years" },
-    { value: "15-20", label: "15-20 years" },
-    { value: "20+", label: "20+ years" },
-  ];
-
-  function handleSelect(data) {
-    setSelectedOptions(data);
+  function handleJobSelect(data) {
+    setSelectedJobs(data);
+    onFiltersChange(data, selectedJobs);
   }
-
-  const handleExperience = (data) => {
-    setExperienceOptions(data);
-  };
 
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      minHeight: "100%", // Set the height of the control, // Set the width of the control
+      minHeight: "100%",
     }),
-  };
-
-  const customStyles2 = {
-    control: (provided) => ({
+    option: (provided, state) => ({
       ...provided,
-      minHeight: "100%", // Set the height of the control, // Set the width of the control
+      backgroundColor: state.isSelected
+        ? "#34c759"
+        : state.isFocused
+        ? "#e5e5e5"
+        : "white",
+      color: state.isSelected ? "white" : "black",
+      cursor: "pointer",
     }),
   };
 
   return (
     <div className="search-con">
-        <div className="btnLessDiv">
-          <div className="search">
-            <input id="q" type="text" name="" placeholder="Search Jobs" />
-          </div>
-          <div className="selectDiv">
+      <div className="btnLessDiv">
+        <div className="search">
           <Select
-            options={optionList}
-            placeholder="Select Locations"
-            value={selectedOptions}
-            onChange={handleSelect}
+            options={jobList}
+            placeholder="Select Jobs"
+            value={selectedJobs}
+            onChange={handleJobSelect}
             isSearchable={true}
             styles={customStyles}
             required
-            id="location"
+            id="job"
             isMulti
           />
+        </div>
+      </div>
 
-          <Select
-            options={experienceList}
-            placeholder="Experience"
-            value={ExperienceOptions}
-            onChange={handleExperience}
-            isSearchable={true}
-            styles={customStyles2}
-            required
-            id="experience"
-          />
-          </div>
-        </div>
-        <div className="sea-btn">
-          <input type="submit" className="goBtn" value="Go" />
-        </div>
     </div>
   );
 };
